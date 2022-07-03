@@ -1,0 +1,35 @@
+:root {
+$main-blue: rgb(28,156,216);
+$main-dark-grey: rgb(26,26,26);
+$main-bright-grey: rgb(230,230,230);
+}
+
+
+body {
+    height: 500vh;
+}
+
+// .navbar {
+//     height: 10vh;
+// }
+
+// .navbar a {
+//     height: 100%;
+// }
+
+img {
+    height: 15vh;
+}
+
+.collapse {
+    color: rgb(5, 50, 255);
+}
+
+.carousel {
+    height: 100vh;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
