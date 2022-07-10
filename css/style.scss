@@ -7,29 +7,61 @@ $main-bright-grey: rgb(230,230,230);
 
 body {
     height: 500vh;
+    background-color: black;
 }
 
-// .navbar {
-//     height: 10vh;
-// }
-
-// .navbar a {
-//     height: 100%;
-// }
-
-img {
-    height: 15vh;
+.navbar {
+    height: 10vh;
 }
+
+.navbar a {
+    height: 100%;
+}
+
+.navbar img {
+    height: 90%;
+}
+
+
 
 .collapse {
-    color: rgb(5, 50, 255);
+    height: 100%;
 }
 
-.carousel {
-    height: 100vh;
+.social-media {
+    height: 100%;
+}
+
+section.carousel {
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    max-height: 90vh;
+    margin-top: 10vh;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    margin-top: 0;
+}
+
+.carousel-item {
+    background-color: black;
 }
 
 .carousel-item img {
     width: 100%;
     height: auto;
+    opacity: 0.6;
+}
+
+
+.carousel-caption {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slide {
+    max-height: 90vh;
 }
