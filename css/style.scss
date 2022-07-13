@@ -1,56 +1,125 @@
 
-$main-blue: rgb(28,156,216);
+$main-blue: rgb(0,141,210);
 $main-dark-grey: rgb(26,26,26);
 $main-bright-grey: rgb(230,230,230);
 
-
+// html {
+//     width: 100vw;
+//     overflow: hidden;
+// }
 // navbar
 
 
 body {
     height: 500vh;
-    background-color: black;
+    background: $main-dark-grey;
+    font-family: 'Poppins', sans-serif;
 }
 
 $navbarHeight: 20vh;
 .navbar {
     height: $navbarHeight;
-    background: linear-gradient(180deg, rgba(28,156,216,1) 0%, rgba(1,1,1,1) 100%);
+    width: 100%;
+    background-color: $main-blue;
+    position: relative;
+}
+
+.navbar::before {
+    content: '';
+    display: block;
+    background-color: $main-blue;
+    border-bottom: 8px solid white;
+    width: 150%;
+    height: 100%;
+    position: absolute;
+    top:8px;
+    right: 0;
+    z-index: -5000;
+    transform-origin: bottom right;
+    transform: rotate(-3deg);
 }
 .navbar a {
-    height: 90%;
+    color: $main-bright-grey;
+}
+
+
+.navbar-brand {
+    height: 11vw;
+    min-height: 100%;
+    align-self: flex-start;
+    z-index: 2;
 }
 
 .navbar img {
-    height: 90%;
+    height: 100%;
 }
 
+.navbar-nav {
+    margin-right: 10%;
+    // gap: 30px;
 
+    a {
+        transform: scale(100%);
+        transition: 0.3s;
+    }
+
+    a:hover {
+        color: white;
+        transition: 0.3s;
+        transform: scale(110%);
+        
+    }
+}
 
 .collapse {
     height: 100%;
+    z-index: 2;
+}
+
+.navbar-toggler {
+    background-color: black;
+    span {
+        color: white;
+    }
 }
 
 .social-media {
     height: 100%;
+    align-items: center;
+    gap: 15px;
+    a {
+        display: inline-block;
+        height: 2rem;
+        
+        img {
+            height: 100%;
+        }
+    }
 }
 
 
 // slider
 
-.slider {
-    height: calc(100vh - #{$navbarHeight});
+.container {
+    width: 100%;
     position: relative;
-    color: white;
-    padding-top: $navbarHeight;
+}
+
+.slider {
+    height: 100vh;
+    position: relative;
+    color: $main-bright-grey;
 }
 
 .slide {
+    max-width: 1280px;
     position: absolute;
-    height: 100%;
+    height: calc(100vh - #{$navbarHeight});
     display: flex;
     flex-direction: row;
+    align-items: center;
     padding: 5vh 2vw 3vh;
+    margin: 0 auto;
 
     p {
         display: block;
@@ -73,6 +142,7 @@ $slideImgHeight: 90%;
 
 .slideImg {
     min-width: 500px;
+    min-height: 90%;
     background-color: $main-blue;
     position: relative;
 }
@@ -80,7 +150,7 @@ $slideImgHeight: 90%;
     clip-path: polygon(50% 0%, 100% 31%, 80% 79%, 19% 94%, 3% 22%);   
 }
 #slide2Img {
-    clip-path: polygon(39% 23%, 100% 20%, 87% 86%, 14% 93%, 3% 49%);
+    clip-path: polygon(39% 13%, 100% 20%, 87% 86%, 14% 93%, 3% 49%);
 }
 #slide3Img {
     clip-path: polygon(3% 9%, 63% 7%, 96% 39%, 93% 96%, 15% 86%);
@@ -101,7 +171,7 @@ $slideImgHeight: 90%;
     top: 5px;
     left: 5px;
     background-color: $main-blue;
-    clip-path: polygon(39% 23%, 100% 20%, 87% 86%, 14% 93%, 3% 49%);
+    clip-path: polygon(39% 13%, 100% 20%, 87% 86%, 14% 93%, 3% 49%);
 }
 #slide3Img>div {
     height: calc(100% - 10px);
@@ -130,7 +200,7 @@ $slideImgHeight: 90%;
     top: 5px;
     left: 5px;
     background-image: url(/img/carouselv2.jpg);
-    clip-path: polygon(39% 23%, 100% 20%, 87% 86%, 14% 93%, 3% 49%);
+    clip-path: polygon(39% 13%, 100% 20%, 87% 86%, 14% 93%, 3% 49%);
 }
 #slide3Img>div>div {
     height: calc(100% - 10px);
@@ -142,6 +212,29 @@ $slideImgHeight: 90%;
     clip-path: polygon(3% 9%, 63% 7%, 96% 39%, 93% 96%, 15% 86%);
 }
 
+
+.sliderButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100%;
+    // padding-top: $navbarHeight;
+    background-color: rgba(1,1,1,0);
+    border: none;
+    color: white;
+
+    i {
+        font-size: 2rem;
+    }
+}
+
+#previous {
+    left: 2%;
+}
+
+#next {
+    right: 2%;
+}
 
 
 

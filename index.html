@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bipi Detailing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,17 +20,17 @@
 <body>
 
   <header>
-    <nav class="navbar fixed-top navbar-dark bg-dark navbar-expand-md">
-      <a href="X" class="navbar-brand ms-2"><img src="./img/logopng.png" alt="" class="d-inline-block"></a>
+    <nav class="navbar navbar-expand-md">
+      <a href="X" class="navbar-brand ms-5 mt-3"><img src="./img/logopng.png" alt="" class="d-inline-block"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collmenu">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse flex-row-reverse" id="collmenu">
-        <div class="social-media d-none d-md-block">
+        <div class="social-media d-none d-md-flex me-5">
           <a href="#"><img src="./img/iglogo.png" alt=""></a>
           <a href="#"><img src="./img/fblogo.png" alt=""></a>
         </div>
-        <ul class="navbar-nav bg-dark text-center">
+        <ul class="navbar-nav gap-md-5 text-center">
           <li class="nav-item">
             <a href="" class="nav-link">Strona główna</a>
           </li>
@@ -51,33 +54,35 @@
 
     </nav>
   </header>
-  <section class="slider container">
-    <div id="slide1" class="slide ">
-      <div class="slideImg col-md-6" id="slide1Img">
-        <div>
-          <div></div>
+  <section class="slider ">
+    <div class="container">
+      <div id="slide1" class="slide flex-column flex-md-row">
+        <div class="slideImg col-12 col-md-6" id="slide1Img">
+          <div>
+            <div></div>
+          </div>
         </div>
+        <p class="col-12 col-md-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis tempore necessitatibus
+          sapiente. Delectus quibusdam culpa beatae provident cupiditate rerum at?</p>
       </div>
-      <p class="col-md-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis tempore necessitatibus
-        sapiente. Delectus quibusdam culpa beatae provident cupiditate rerum at?</p>
-    </div>
-    <div id="slide2" class="slide d-none">
-      <div class="slideImg col-md-6" id="slide2Img">
-        <div>
-          <div></div>
+      <div id="slide2" class="slide flex-column flex-md-row">
+        <div class="slideImg col-md-6" id="slide2Img">
+          <div>
+            <div></div>
+          </div>
         </div>
+        <p class="col-md-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis tempore necessitatibus
+          sapiente. Delectus quibusdam culpa beatae provident cupiditate rerum at?</p>
       </div>
-      <p class="col-md-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis tempore necessitatibus
-        sapiente. Delectus quibusdam culpa beatae provident cupiditate rerum at?</p>
-    </div>
-    <div id="slide3" class="slide d-none">
-      <div class="slideImg col-md-6" id="slide3Img">
-        <div>
-          <div></div>
+      <div id="slide3" class="slide flex-column flex-md-row">
+        <div class="slideImg col-md-6" id="slide3Img">
+          <div>
+            <div></div>
+          </div>
         </div>
+        <p class="col-md-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis tempore necessitatibus
+          sapiente. Delectus quibusdam culpa beatae provident cupiditate rerum at?</p>
       </div>
-      <p class="col-md-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis tempore necessitatibus
-        sapiente. Delectus quibusdam culpa beatae provident cupiditate rerum at?</p>
     </div>
     <button class="sliderButton" id='previous'><i class="fa-solid fa-angle-left"></i></button>
     <button class="sliderButton" id="next"><i class="fa-solid fa-angle-right"></i></button>
