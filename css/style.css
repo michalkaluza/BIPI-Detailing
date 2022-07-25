@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 * {
   margin: 0;
   padding: 0;
@@ -11,8 +10,6 @@ html {
   scroll-behavior: smooth;
 }
 
-=======
->>>>>>> ff38d78277e911e3e0f25f76200518da1e0d9353
 body {
   height: 500vh;
   background: #1a1a1a;
@@ -36,11 +33,7 @@ body {
   position: absolute;
   top: 8px;
   right: 0;
-<<<<<<< HEAD
   z-index: -2;
-=======
-  z-index: -5000;
->>>>>>> ff38d78277e911e3e0f25f76200518da1e0d9353
   -webkit-transform-origin: bottom right;
           transform-origin: bottom right;
   -webkit-transform: rotate(-3deg);
@@ -64,11 +57,7 @@ body {
 }
 
 .navbar-nav {
-<<<<<<< HEAD
   font-size: 1.1rem;
-=======
-  margin-right: 10%;
->>>>>>> ff38d78277e911e3e0f25f76200518da1e0d9353
 }
 
 .navbar-nav a {
@@ -86,7 +75,6 @@ body {
           transform: scale(110%);
 }
 
-<<<<<<< HEAD
 @media all and (max-width: 767px) {
   .navbar-collapse {
     background-color: #1a1a1a;
@@ -103,19 +91,6 @@ body {
 .navbar-toggler:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
-=======
-.collapse {
-  height: 100%;
-  z-index: 2;
-}
-
-.navbar-toggler {
-  background-color: black;
-}
-
-.navbar-toggler span {
-  color: white;
->>>>>>> ff38d78277e911e3e0f25f76200518da1e0d9353
 }
 
 .social-media {
@@ -137,7 +112,6 @@ body {
 
 .container {
   width: 100%;
-<<<<<<< HEAD
   height: 100%;
   position: relative;
   text-align: center;
@@ -145,13 +119,6 @@ body {
 
 .slider {
   height: calc(100vh - 20vh);
-=======
-  position: relative;
-}
-
-.slider {
-  height: 100vh;
->>>>>>> ff38d78277e911e3e0f25f76200518da1e0d9353
   position: relative;
   color: #e6e6e6;
 }
@@ -159,11 +126,7 @@ body {
 .slide {
   max-width: 1280px;
   position: absolute;
-<<<<<<< HEAD
   height: 100%;
-=======
-  height: calc(100vh - 20vh);
->>>>>>> ff38d78277e911e3e0f25f76200518da1e0d9353
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -174,21 +137,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-<<<<<<< HEAD
   padding: 7vh 2vw 3vh;
   margin: 0 auto;
   opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-=======
-  padding: 5vh 2vw 3vh;
-  margin: 0 auto;
->>>>>>> ff38d78277e911e3e0f25f76200518da1e0d9353
 }
 
 .slide p {
   display: block;
-<<<<<<< HEAD
   font-size: 2.5rem;
   font-weight: 400;
   text-align: center;
@@ -218,8 +175,6 @@ body {
     height: 30%;
     font-size: 1.5rem;
   }
-=======
->>>>>>> ff38d78277e911e3e0f25f76200518da1e0d9353
 }
 
 .slideImg > div > div {
@@ -236,7 +191,6 @@ body {
 }
 
 #slide1Img {
-<<<<<<< HEAD
   -webkit-clip-path: polygon(50% 0%, 100% 31%, 98% 90%, 19% 94%, 0% 21%);
           clip-path: polygon(50% 0%, 100% 31%, 98% 90%, 19% 94%, 0% 21%);
 }
@@ -249,20 +203,6 @@ body {
 #slide3Img {
   -webkit-clip-path: polygon(41% 4%, 100% 19%, 92% 87%, 3% 89%, 0 39%);
           clip-path: polygon(41% 4%, 100% 19%, 92% 87%, 3% 89%, 0 39%);
-=======
-  -webkit-clip-path: polygon(50% 0%, 100% 31%, 80% 79%, 19% 94%, 3% 22%);
-          clip-path: polygon(50% 0%, 100% 31%, 80% 79%, 19% 94%, 3% 22%);
-}
-
-#slide2Img {
-  -webkit-clip-path: polygon(39% 13%, 100% 20%, 87% 86%, 14% 93%, 3% 49%);
-          clip-path: polygon(39% 13%, 100% 20%, 87% 86%, 14% 93%, 3% 49%);
-}
-
-#slide3Img {
-  -webkit-clip-path: polygon(3% 9%, 63% 7%, 96% 39%, 93% 96%, 15% 86%);
-          clip-path: polygon(3% 9%, 63% 7%, 96% 39%, 93% 96%, 15% 86%);
->>>>>>> ff38d78277e911e3e0f25f76200518da1e0d9353
 }
 
 #slide1Img > div {
@@ -272,13 +212,8 @@ body {
   top: 5px;
   left: 5px;
   background-color: white;
-<<<<<<< HEAD
   -webkit-clip-path: polygon(50% 0%, 100% 31%, 98% 90%, 19% 94%, 0% 21%);
           clip-path: polygon(50% 0%, 100% 31%, 98% 90%, 19% 94%, 0% 21%);
-=======
-  -webkit-clip-path: polygon(50% 0%, 100% 31%, 80% 79%, 19% 94%, 3% 22%);
-          clip-path: polygon(50% 0%, 100% 31%, 80% 79%, 19% 94%, 3% 22%);
->>>>>>> ff38d78277e911e3e0f25f76200518da1e0d9353
 }
 
 #slide2Img > div {
@@ -287,15 +222,9 @@ body {
   position: absolute;
   top: 5px;
   left: 5px;
-<<<<<<< HEAD
   background-color: white;
   -webkit-clip-path: polygon(36% 0%, 100% 24%, 96% 85%, 4% 95%, 0 18%);
           clip-path: polygon(36% 0%, 100% 24%, 96% 85%, 4% 95%, 0 18%);
-=======
-  background-color: #008dd2;
-  -webkit-clip-path: polygon(39% 13%, 100% 20%, 87% 86%, 14% 93%, 3% 49%);
-          clip-path: polygon(39% 13%, 100% 20%, 87% 86%, 14% 93%, 3% 49%);
->>>>>>> ff38d78277e911e3e0f25f76200518da1e0d9353
 }
 
 #slide3Img > div {
@@ -304,15 +233,9 @@ body {
   position: absolute;
   top: 5px;
   left: 5px;
-<<<<<<< HEAD
   background-color: white;
   -webkit-clip-path: polygon(41% 4%, 100% 19%, 92% 87%, 3% 89%, 0 39%);
           clip-path: polygon(41% 4%, 100% 19%, 92% 87%, 3% 89%, 0 39%);
-=======
-  background-color: #008dd2;
-  -webkit-clip-path: polygon(3% 9%, 63% 7%, 96% 39%, 93% 96%, 15% 86%);
-          clip-path: polygon(3% 9%, 63% 7%, 96% 39%, 93% 96%, 15% 86%);
->>>>>>> ff38d78277e911e3e0f25f76200518da1e0d9353
 }
 
 #slide1Img > div > div {
@@ -321,15 +244,9 @@ body {
   position: absolute;
   top: 5px;
   left: 5px;
-<<<<<<< HEAD
   background-image: url(/img/carousel1.jpg);
   -webkit-clip-path: polygon(50% 0%, 100% 31%, 98% 90%, 19% 94%, 0% 21%);
           clip-path: polygon(50% 0%, 100% 31%, 98% 90%, 19% 94%, 0% 21%);
-=======
-  background-image: url(/img/carouselv1.jpg);
-  -webkit-clip-path: polygon(50% 0%, 100% 31%, 80% 79%, 19% 94%, 3% 22%);
-          clip-path: polygon(50% 0%, 100% 31%, 80% 79%, 19% 94%, 3% 22%);
->>>>>>> ff38d78277e911e3e0f25f76200518da1e0d9353
 }
 
 #slide2Img > div > div {
@@ -338,16 +255,10 @@ body {
   position: absolute;
   top: 5px;
   left: 5px;
-<<<<<<< HEAD
   background-image: url(/img/carousel2.jpg);
   background-position: 0 10%;
   -webkit-clip-path: polygon(36% 0%, 100% 24%, 96% 85%, 4% 95%, 0 18%);
           clip-path: polygon(36% 0%, 100% 24%, 96% 85%, 4% 95%, 0 18%);
-=======
-  background-image: url(/img/carouselv2.jpg);
-  -webkit-clip-path: polygon(39% 13%, 100% 20%, 87% 86%, 14% 93%, 3% 49%);
-          clip-path: polygon(39% 13%, 100% 20%, 87% 86%, 14% 93%, 3% 49%);
->>>>>>> ff38d78277e911e3e0f25f76200518da1e0d9353
 }
 
 #slide3Img > div > div {
@@ -356,20 +267,13 @@ body {
   position: absolute;
   top: 5px;
   left: 5px;
-<<<<<<< HEAD
   background-image: url(/img/carousel3.jpg);
   -webkit-clip-path: polygon(41% 4%, 100% 19%, 92% 87%, 3% 89%, 0 39%);
           clip-path: polygon(41% 4%, 100% 19%, 92% 87%, 3% 89%, 0 39%);
-=======
-  background-image: url(/img/carouselv3.jpg);
-  -webkit-clip-path: polygon(3% 9%, 63% 7%, 96% 39%, 93% 96%, 15% 86%);
-          clip-path: polygon(3% 9%, 63% 7%, 96% 39%, 93% 96%, 15% 86%);
->>>>>>> ff38d78277e911e3e0f25f76200518da1e0d9353
 }
 
 .sliderButton {
   position: absolute;
-<<<<<<< HEAD
   top: 0;
   height: 100%;
   display: -webkit-box;
@@ -390,18 +294,6 @@ body {
 }
 
 .sliderButton button i {
-=======
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  height: 100%;
-  background-color: rgba(1, 1, 1, 0);
-  border: none;
-  color: white;
-}
-
-.sliderButton i {
->>>>>>> ff38d78277e911e3e0f25f76200518da1e0d9353
   font-size: 2rem;
 }
 
@@ -412,7 +304,6 @@ body {
 #next {
   right: 2%;
 }
-<<<<<<< HEAD
 
 .slideIndicators {
   position: absolute;
@@ -486,6 +377,4 @@ body {
     padding: 4rem 2rem;
   }
 }
-=======
->>>>>>> ff38d78277e911e3e0f25f76200518da1e0d9353
 /*# sourceMappingURL=style.css.map */
