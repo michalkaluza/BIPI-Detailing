@@ -1,3 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   height: 500vh;
   background: #1a1a1a;
@@ -21,7 +33,7 @@ body {
   position: absolute;
   top: 8px;
   right: 0;
-  z-index: -5000;
+  z-index: -2;
   -webkit-transform-origin: bottom right;
           transform-origin: bottom right;
   -webkit-transform: rotate(-3deg);
@@ -45,7 +57,7 @@ body {
 }
 
 .navbar-nav {
-  margin-right: 10%;
+  font-size: 1.1rem;
 }
 
 .navbar-nav a {
@@ -63,17 +75,22 @@ body {
           transform: scale(110%);
 }
 
-.collapse {
-  height: 100%;
-  z-index: 2;
-}
-
-.navbar-toggler {
-  background-color: black;
+@media all and (max-width: 767px) {
+  .navbar-collapse {
+    background-color: #1a1a1a;
+  }
+  .navbar-collapse li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
 }
 
 .navbar-toggler span {
-  color: white;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .social-media {
@@ -95,11 +112,13 @@ body {
 
 .container {
   width: 100%;
+  height: 100%;
   position: relative;
+  text-align: center;
 }
 
 .slider {
-  height: 100vh;
+  height: calc(100vh - 20vh);
   position: relative;
   color: #e6e6e6;
 }
@@ -107,7 +126,7 @@ body {
 .slide {
   max-width: 1280px;
   position: absolute;
-  height: calc(100vh - 20vh);
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -118,12 +137,44 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 5vh 2vw 3vh;
+  padding: 7vh 2vw 3vh;
   margin: 0 auto;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .slide p {
   display: block;
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-align: center;
+  padding: 2rem;
+}
+
+.slide p span {
+  font-weight: 900;
+  color: #008dd2;
+}
+
+.activeSlide {
+  opacity: 1;
+}
+
+@media all and (max-width: 600px) {
+  .slide {
+    max-width: 100%;
+  }
+  .slide .slideImg {
+    width: 90%;
+    min-width: 1px;
+    height: 70%;
+    min-height: 1px;
+  }
+  .slide p {
+    height: 30%;
+    font-size: 1.5rem;
+  }
 }
 
 .slideImg > div > div {
@@ -140,18 +191,18 @@ body {
 }
 
 #slide1Img {
-  -webkit-clip-path: polygon(50% 0%, 100% 31%, 80% 79%, 19% 94%, 3% 22%);
-          clip-path: polygon(50% 0%, 100% 31%, 80% 79%, 19% 94%, 3% 22%);
+  -webkit-clip-path: polygon(50% 0%, 100% 31%, 98% 90%, 19% 94%, 0% 21%);
+          clip-path: polygon(50% 0%, 100% 31%, 98% 90%, 19% 94%, 0% 21%);
 }
 
 #slide2Img {
-  -webkit-clip-path: polygon(39% 13%, 100% 20%, 87% 86%, 14% 93%, 3% 49%);
-          clip-path: polygon(39% 13%, 100% 20%, 87% 86%, 14% 93%, 3% 49%);
+  -webkit-clip-path: polygon(36% 0%, 100% 24%, 96% 85%, 4% 95%, 0 18%);
+          clip-path: polygon(36% 0%, 100% 24%, 96% 85%, 4% 95%, 0 18%);
 }
 
 #slide3Img {
-  -webkit-clip-path: polygon(3% 9%, 63% 7%, 96% 39%, 93% 96%, 15% 86%);
-          clip-path: polygon(3% 9%, 63% 7%, 96% 39%, 93% 96%, 15% 86%);
+  -webkit-clip-path: polygon(41% 4%, 100% 19%, 92% 87%, 3% 89%, 0 39%);
+          clip-path: polygon(41% 4%, 100% 19%, 92% 87%, 3% 89%, 0 39%);
 }
 
 #slide1Img > div {
@@ -161,8 +212,8 @@ body {
   top: 5px;
   left: 5px;
   background-color: white;
-  -webkit-clip-path: polygon(50% 0%, 100% 31%, 80% 79%, 19% 94%, 3% 22%);
-          clip-path: polygon(50% 0%, 100% 31%, 80% 79%, 19% 94%, 3% 22%);
+  -webkit-clip-path: polygon(50% 0%, 100% 31%, 98% 90%, 19% 94%, 0% 21%);
+          clip-path: polygon(50% 0%, 100% 31%, 98% 90%, 19% 94%, 0% 21%);
 }
 
 #slide2Img > div {
@@ -171,9 +222,9 @@ body {
   position: absolute;
   top: 5px;
   left: 5px;
-  background-color: #008dd2;
-  -webkit-clip-path: polygon(39% 13%, 100% 20%, 87% 86%, 14% 93%, 3% 49%);
-          clip-path: polygon(39% 13%, 100% 20%, 87% 86%, 14% 93%, 3% 49%);
+  background-color: white;
+  -webkit-clip-path: polygon(36% 0%, 100% 24%, 96% 85%, 4% 95%, 0 18%);
+          clip-path: polygon(36% 0%, 100% 24%, 96% 85%, 4% 95%, 0 18%);
 }
 
 #slide3Img > div {
@@ -182,9 +233,9 @@ body {
   position: absolute;
   top: 5px;
   left: 5px;
-  background-color: #008dd2;
-  -webkit-clip-path: polygon(3% 9%, 63% 7%, 96% 39%, 93% 96%, 15% 86%);
-          clip-path: polygon(3% 9%, 63% 7%, 96% 39%, 93% 96%, 15% 86%);
+  background-color: white;
+  -webkit-clip-path: polygon(41% 4%, 100% 19%, 92% 87%, 3% 89%, 0 39%);
+          clip-path: polygon(41% 4%, 100% 19%, 92% 87%, 3% 89%, 0 39%);
 }
 
 #slide1Img > div > div {
@@ -193,9 +244,9 @@ body {
   position: absolute;
   top: 5px;
   left: 5px;
-  background-image: url(/img/carouselv1.jpg);
-  -webkit-clip-path: polygon(50% 0%, 100% 31%, 80% 79%, 19% 94%, 3% 22%);
-          clip-path: polygon(50% 0%, 100% 31%, 80% 79%, 19% 94%, 3% 22%);
+  background-image: url(/img/carousel1.jpg);
+  -webkit-clip-path: polygon(50% 0%, 100% 31%, 98% 90%, 19% 94%, 0% 21%);
+          clip-path: polygon(50% 0%, 100% 31%, 98% 90%, 19% 94%, 0% 21%);
 }
 
 #slide2Img > div > div {
@@ -204,9 +255,10 @@ body {
   position: absolute;
   top: 5px;
   left: 5px;
-  background-image: url(/img/carouselv2.jpg);
-  -webkit-clip-path: polygon(39% 13%, 100% 20%, 87% 86%, 14% 93%, 3% 49%);
-          clip-path: polygon(39% 13%, 100% 20%, 87% 86%, 14% 93%, 3% 49%);
+  background-image: url(/img/carousel2.jpg);
+  background-position: 0 10%;
+  -webkit-clip-path: polygon(36% 0%, 100% 24%, 96% 85%, 4% 95%, 0 18%);
+          clip-path: polygon(36% 0%, 100% 24%, 96% 85%, 4% 95%, 0 18%);
 }
 
 #slide3Img > div > div {
@@ -215,23 +267,33 @@ body {
   position: absolute;
   top: 5px;
   left: 5px;
-  background-image: url(/img/carouselv3.jpg);
-  -webkit-clip-path: polygon(3% 9%, 63% 7%, 96% 39%, 93% 96%, 15% 86%);
-          clip-path: polygon(3% 9%, 63% 7%, 96% 39%, 93% 96%, 15% 86%);
+  background-image: url(/img/carousel3.jpg);
+  -webkit-clip-path: polygon(41% 4%, 100% 19%, 92% 87%, 3% 89%, 0 39%);
+          clip-path: polygon(41% 4%, 100% 19%, 92% 87%, 3% 89%, 0 39%);
 }
 
 .sliderButton {
   position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  top: 0;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sliderButton button {
   background-color: rgba(1, 1, 1, 0);
   border: none;
   color: white;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
-.sliderButton i {
+.sliderButton button i {
   font-size: 2rem;
 }
 
@@ -241,5 +303,78 @@ body {
 
 #next {
   right: 2%;
+}
+
+.slideIndicators {
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.slideIndicators button {
+  width: 2rem;
+  height: 0.3rem;
+  border: none;
+  margin-right: 0.5rem;
+  background-color: gray;
+  cursor: pointer;
+}
+
+.slideIndicators .activeIndicator {
+  background-color: white;
+}
+
+.oNas {
+  height: 100vh;
+}
+
+.oNasBcg {
+  height: 100%;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1a1a1a), color-stop(15%, rgba(26, 26, 26, 0)), color-stop(85%, rgba(26, 26, 26, 0)), to(#1a1a1a)), url(../img/camaro.jpg);
+  background-image: linear-gradient(180deg, #1a1a1a 0%, rgba(26, 26, 26, 0) 15%, rgba(26, 26, 26, 0) 85%, #1a1a1a 100%), url(../img/camaro.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.oNasWrap {
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  right: 60%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+}
+
+.sectionTitle {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  line-height: 0.8;
+  margin-bottom: 1.3rem;
+  display: block;
+  padding-bottom: 1.3rem;
+  border-bottom: 0.5rem solid #008dd2;
+}
+
+@media all and (max-width: 768px) {
+  .oNas {
+    height: auto;
+  }
+  .oNasBcg {
+    background-size: 230%;
+    background-position: 0% 0%;
+  }
+  .oNasWrap {
+    position: static;
+    padding: 4rem 2rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -7,8 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bipi Detailing</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -22,7 +23,8 @@
   <header>
     <nav class="navbar navbar-expand-md">
       <a href="X" class="navbar-brand ms-5 mt-3"><img src="./img/logopng.png" alt="" class="d-inline-block"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collmenu">
+      <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#collmenu">
+
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse flex-row-reverse" id="collmenu">
@@ -30,7 +32,7 @@
           <a href="#"><img src="./img/iglogo.png" alt=""></a>
           <a href="#"><img src="./img/fblogo.png" alt=""></a>
         </div>
-        <ul class="navbar-nav gap-md-5 text-center">
+        <ul class="navbar-nav gap-md-5 me-md-5 text-center">
           <li class="nav-item">
             <a href="" class="nav-link">Strona główna</a>
           </li>
@@ -56,84 +58,50 @@
   </header>
   <section class="slider ">
     <div class="container">
-      <div id="slide1" class="slide flex-column flex-md-row">
+      <div id="slide1" class="slide flex-column flex-md-row-reverse activeSlide">
         <div class="slideImg col-12 col-md-6" id="slide1Img">
           <div>
             <div></div>
           </div>
         </div>
-        <p class="col-12 col-md-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis tempore necessitatibus
-          sapiente. Delectus quibusdam culpa beatae provident cupiditate rerum at?</p>
+        <p class="col-12 col-md-6 px-md-5"><span>Kompleksowo</span> zadbany o czystość Twojego auta</p>
       </div>
-      <div id="slide2" class="slide flex-column flex-md-row">
+      <div id="slide2" class="slide flex-column flex-md-row ">
         <div class="slideImg col-md-6" id="slide2Img">
           <div>
             <div></div>
           </div>
         </div>
-        <p class="col-md-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis tempore necessitatibus
-          sapiente. Delectus quibusdam culpa beatae provident cupiditate rerum at?</p>
+        <p class="col-md-6"><span>Profesjonalna</span> myjnia ręczna i studio detailingu</p>
       </div>
-      <div id="slide3" class="slide flex-column flex-md-row">
+      <div id="slide3" class="slide flex-column flex-md-row-reverse">
         <div class="slideImg col-md-6" id="slide3Img">
           <div>
             <div></div>
           </div>
         </div>
-        <p class="col-md-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis tempore necessitatibus
-          sapiente. Delectus quibusdam culpa beatae provident cupiditate rerum at?</p>
+        <p class="col-md-6">Pielęgnacja auta na <span>najwyższym</span> poziomie</p>
       </div>
     </div>
-    <button class="sliderButton" id='previous'><i class="fa-solid fa-angle-left"></i></button>
-    <button class="sliderButton" id="next"><i class="fa-solid fa-angle-right"></i></button>
+    <div class="sliderButton" id='previous'><button ><i class="fa-solid fa-angle-left"></i></button></div>
+    <div class="sliderButton" id='next'><button><i class="fa-solid fa-angle-right"></i></button></div>
     <div class="slideIndicators">
-      <button id="showSlide1"></button>
-      <button id="showSlide2"></button>
-      <button id="showSlide3"></button>
+      <button id="showSlide1" data-index="0" class="activeIndicator"></button>
+      <button id="showSlide2" data-index="1"></button>
+      <button id="showSlide3" data-index="2"></button>
     </div>
   </section>
 
-
-
-
-
-
-
-
-
-  <!-- <section class="carousel">
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, odit numquam, inventore explicabo facilis assumenda cum in a ea atque ex? Deleniti accusamus porro eveniet rerum tempora blanditiis asperiores est officiis magni! </p>
-                <img src="./img/carouselv1.jpg" class="d-block" alt="...">
-              </div>
-              <div class="carousel-item">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, odit numquam, inventore explicabo facilis assumenda cum in a ea atque ex? Deleniti accusamus porro eveniet rerum tempora blanditiis asperiores est officiis magni! </p>
-                <img src="./img/carouselv2.jpg" class="d-block" alt="...">
-              </div>
-              <div class="carousel-item">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, odit numquam, inventore explicabo facilis assumenda cum in a ea atque ex? Deleniti accusamus porro eveniet rerum tempora blanditiis asperiores est officiis magni! </p>
-                <img src="./img/carouselv3.jpg" class="d-block" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </section> -->
-
-
+  <section class="oNas">
+    <div class="oNasBcg">
+      <div class="oNasWrap d-flex">
+        <h1 class="sectionTitle">O nas</h1>
+        <p class="pFont">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, incidunt a. Ut, at deserunt
+          ullam consequatur esse quos quod voluptatibus in totam voluptatem asperiores dignissimos porro exercitationem
+          dolor ex eum.</p>
+      </div>
+    </div>
+  </section>
 
 
 

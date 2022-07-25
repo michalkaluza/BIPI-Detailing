@@ -1,14 +1,23 @@
+// ideas
+// growing camaro
+// change slider arrows
 
-$main-blue: rgb(0,141,210);
-$main-dark-grey: rgb(26,26,26);
-$main-bright-grey: rgb(230,230,230);
+$main-blue: rgb(0, 141, 210);
+$main-dark-grey: rgb(26, 26, 26);
+$main-bright-grey: rgb(230, 230, 230);
 
-// html {
-//     width: 100vw;
-//     overflow: hidden;
-// }
-// navbar
+$navbarHeight: 20vh;
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: inherit;
+}
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     height: 500vh;
@@ -16,7 +25,6 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-$navbarHeight: 20vh;
 .navbar {
     height: $navbarHeight;
     width: 100%;
@@ -32,16 +40,16 @@ $navbarHeight: 20vh;
     width: 150%;
     height: 100%;
     position: absolute;
-    top:8px;
+    top: 8px;
     right: 0;
-    z-index: -5000;
+    z-index: -2;
     transform-origin: bottom right;
     transform: rotate(-3deg);
 }
+
 .navbar a {
     color: $main-bright-grey;
 }
-
 
 .navbar-brand {
     height: 11vw;
@@ -55,8 +63,7 @@ $navbarHeight: 20vh;
 }
 
 .navbar-nav {
-    margin-right: 10%;
-    // gap: 30px;
+    font-size: 1.1rem;
 
     a {
         transform: scale(100%);
@@ -67,30 +74,43 @@ $navbarHeight: 20vh;
         color: white;
         transition: 0.3s;
         transform: scale(110%);
-        
+
     }
 }
 
-.collapse {
-    height: 100%;
-    z-index: 2;
+@media all and (max-width: 767px) {
+    .navbar-collapse {
+        background-color: $main-dark-grey;
+
+        li {
+            border-bottom: 1px solid rgba(256, 256, 256, 0.2);
+        }
+    }
 }
+
 
 .navbar-toggler {
-    background-color: black;
+
     span {
-        color: white;
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+
+    &:focus {
+        box-shadow: none;
     }
 }
+
+
 
 .social-media {
     height: 100%;
     align-items: center;
     gap: 15px;
+
     a {
         display: inline-block;
         height: 2rem;
-        
+
         img {
             height: 100%;
         }
@@ -102,42 +122,81 @@ $navbarHeight: 20vh;
 
 .container {
     width: 100%;
+    height: 100%;
     position: relative;
+    text-align: center;
 }
 
 .slider {
-    height: 100vh;
+    height: calc(100vh - #{$navbarHeight});
     position: relative;
     color: $main-bright-grey;
+    // z-index: -1;
 }
 
 .slide {
     max-width: 1280px;
     position: absolute;
-    height: calc(100vh - #{$navbarHeight});
+    height: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 5vh 2vw 3vh;
+    padding: 7vh 2vw 3vh;
     margin: 0 auto;
+    opacity: 0;
+    transition: 0.3s;
+    
 
     p {
         display: block;
+        font-size: 2.5rem;
+        font-weight: 400;
+        text-align: center;
+        padding: 2rem;
+
+        span {
+            font-weight: 900;
+            color: $main-blue
+        }
     }
 
 }
 
+.activeSlide {
+    opacity: 1;
+}
+
+@media all and (max-width: 600px) {
+    .slide {
+        max-width: 100%;
+
+        .slideImg {
+            width: 90%;
+            min-width: 1px;
+            height: 70%;
+            min-height: 1px;
+        }
+
+        p {
+            height: 30%;
+            font-size: 1.5rem;
+        }
+    }
+}
+
 
 .slideImg>div>div {
-    
+
 
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;  
+    background-size: cover;
 }
 
 $slideImgHeight: 90%;
-
+$slideImgClipPath1: polygon(50% 0%, 100% 31%, 98% 90%, 19% 94%, 0% 21%);
+$slideImgClipPath2: polygon(36% 0%, 100% 24%, 96% 85%, 4% 95%, 0 18%);
+$slideImgClipPath3: polygon(41% 4%, 100% 19%, 92% 87%, 3% 89%, 0 39%);
 
 
 .slideImg {
@@ -146,15 +205,19 @@ $slideImgHeight: 90%;
     background-color: $main-blue;
     position: relative;
 }
+
 #slide1Img {
-    clip-path: polygon(50% 0%, 100% 31%, 80% 79%, 19% 94%, 3% 22%);   
+    clip-path: $slideImgClipPath1;
 }
+
 #slide2Img {
-    clip-path: polygon(39% 13%, 100% 20%, 87% 86%, 14% 93%, 3% 49%);
-}
+    clip-path: $slideImgClipPath2;
+}   
+
 #slide3Img {
-    clip-path: polygon(3% 9%, 63% 7%, 96% 39%, 93% 96%, 15% 86%);
+    clip-path: $slideImgClipPath3;
 }
+
 #slide1Img>div {
     height: calc(100% - 10px);
     width: calc(100% - 10px);
@@ -162,25 +225,27 @@ $slideImgHeight: 90%;
     top: 5px;
     left: 5px;
     background-color: white;
-    clip-path: polygon(50% 0%, 100% 31%, 80% 79%, 19% 94%, 3% 22%);   
+    clip-path: $slideImgClipPath1;
 }
+
 #slide2Img>div {
     height: calc(100% - 10px);
     width: calc(100% - 10px);
     position: absolute;
     top: 5px;
     left: 5px;
-    background-color: $main-blue;
-    clip-path: polygon(39% 13%, 100% 20%, 87% 86%, 14% 93%, 3% 49%);
+    background-color: white;
+    clip-path: $slideImgClipPath2;
 }
+
 #slide3Img>div {
     height: calc(100% - 10px);
     width: calc(100% - 10px);
     position: absolute;
     top: 5px;
     left: 5px;
-    background-color: $main-blue;
-    clip-path: polygon(3% 9%, 63% 7%, 96% 39%, 93% 96%, 15% 86%);
+    background-color: white;
+    clip-path: $slideImgClipPath3;;
 }
 
 #slide1Img>div>div {
@@ -189,43 +254,52 @@ $slideImgHeight: 90%;
     position: absolute;
     top: 5px;
     left: 5px;
-    background-image: url(/img/carouselv1.jpg);
-    clip-path: polygon(50% 0%, 100% 31%, 80% 79%, 19% 94%, 3% 22%);
-    
+    background-image: url(/img/carousel1.jpg);
+    clip-path: $slideImgClipPath1;
+
 }
+
 #slide2Img>div>div {
     height: calc(100% - 10px);
     width: calc(100% - 10px);
     position: absolute;
     top: 5px;
     left: 5px;
-    background-image: url(/img/carouselv2.jpg);
-    clip-path: polygon(39% 13%, 100% 20%, 87% 86%, 14% 93%, 3% 49%);
+    background-image: url(/img/carousel2.jpg);
+    background-position: 0 10%;
+    clip-path: $slideImgClipPath2;
 }
+
 #slide3Img>div>div {
     height: calc(100% - 10px);
     width: calc(100% - 10px);
     position: absolute;
     top: 5px;
     left: 5px;
-    background-image: url(/img/carouselv3.jpg);
-    clip-path: polygon(3% 9%, 63% 7%, 96% 39%, 93% 96%, 15% 86%);
+    background-image: url(/img/carousel3.jpg);
+    clip-path: $slideImgClipPath3;
 }
 
 
 .sliderButton {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 0;
     height: 100%;
-    // padding-top: $navbarHeight;
-    background-color: rgba(1,1,1,0);
-    border: none;
-    color: white;
+    display: flex;
+    align-items: center;
 
-    i {
-        font-size: 2rem;
+    button {
+        background-color: rgba(1, 1, 1, 0);
+        border: none;
+        color: rgb(255, 255, 255);
+        height: max-content;
+
+        i {
+            font-size: 2rem;
+        }
     }
+
+
 }
 
 #previous {
@@ -236,6 +310,83 @@ $slideImgHeight: 90%;
     right: 2%;
 }
 
+.slideIndicators {
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+
+    button {
+        width: 2rem;
+        height: 0.3rem;
+        border: none;
+        margin-right: 0.5rem;
+        background-color: gray;
+        cursor: pointer;
+
+
+    }
+
+    .activeIndicator {
+        background-color: white;
+    }
+
+
+}
 
 
 
+// O nas
+
+.oNas {
+    height: 100vh;
+}
+
+.oNasBcg {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(180deg, rgba(26, 26, 26, 1) 0%, rgba(26, 26, 26, 0) 15%, rgba(26, 26, 26, 0) 85%, rgba(26, 26, 26, 1) 100%), url(../img/camaro.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+
+.oNasWrap {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    right: 60%;
+
+    flex-direction: column;
+    color: white;
+}
+
+.sectionTitle {
+    width: fit-content;
+    line-height: 0.8;
+    margin-bottom: 1.3rem;
+    display: block;
+    padding-bottom: 1.3rem;
+    border-bottom: 0.5rem solid $main-blue;
+}
+
+@media all and (max-width: 768px) {
+
+    .oNas {
+        height: auto;
+    }
+
+    .oNasBcg {
+        background-size: 230%;
+        background-position: 0% 0%;
+    }
+
+    .oNasWrap {
+        position: static;
+        padding: 4rem 2rem;
+    }
+}
