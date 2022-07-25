@@ -1,0 +1,245 @@
+body {
+  height: 500vh;
+  background: #1a1a1a;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+  height: 20vh;
+  width: 100%;
+  background-color: #008dd2;
+  position: relative;
+}
+
+.navbar::before {
+  content: '';
+  display: block;
+  background-color: #008dd2;
+  border-bottom: 8px solid white;
+  width: 150%;
+  height: 100%;
+  position: absolute;
+  top: 8px;
+  right: 0;
+  z-index: -5000;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+}
+
+.navbar a {
+  color: #e6e6e6;
+}
+
+.navbar-brand {
+  height: 11vw;
+  min-height: 100%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  z-index: 2;
+}
+
+.navbar img {
+  height: 100%;
+}
+
+.navbar-nav {
+  margin-right: 10%;
+}
+
+.navbar-nav a {
+  -webkit-transform: scale(100%);
+          transform: scale(100%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.navbar-nav a:hover {
+  color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: scale(110%);
+          transform: scale(110%);
+}
+
+.collapse {
+  height: 100%;
+  z-index: 2;
+}
+
+.navbar-toggler {
+  background-color: black;
+}
+
+.navbar-toggler span {
+  color: white;
+}
+
+.social-media {
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+
+.social-media a {
+  display: inline-block;
+  height: 2rem;
+}
+
+.social-media a img {
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  position: relative;
+}
+
+.slider {
+  height: 100vh;
+  position: relative;
+  color: #e6e6e6;
+}
+
+.slide {
+  max-width: 1280px;
+  position: absolute;
+  height: calc(100vh - 20vh);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5vh 2vw 3vh;
+  margin: 0 auto;
+}
+
+.slide p {
+  display: block;
+}
+
+.slideImg > div > div {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.slideImg {
+  min-width: 500px;
+  min-height: 90%;
+  background-color: #008dd2;
+  position: relative;
+}
+
+#slide1Img {
+  -webkit-clip-path: polygon(50% 0%, 100% 31%, 80% 79%, 19% 94%, 3% 22%);
+          clip-path: polygon(50% 0%, 100% 31%, 80% 79%, 19% 94%, 3% 22%);
+}
+
+#slide2Img {
+  -webkit-clip-path: polygon(39% 13%, 100% 20%, 87% 86%, 14% 93%, 3% 49%);
+          clip-path: polygon(39% 13%, 100% 20%, 87% 86%, 14% 93%, 3% 49%);
+}
+
+#slide3Img {
+  -webkit-clip-path: polygon(3% 9%, 63% 7%, 96% 39%, 93% 96%, 15% 86%);
+          clip-path: polygon(3% 9%, 63% 7%, 96% 39%, 93% 96%, 15% 86%);
+}
+
+#slide1Img > div {
+  height: calc(100% - 10px);
+  width: calc(100% - 10px);
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background-color: white;
+  -webkit-clip-path: polygon(50% 0%, 100% 31%, 80% 79%, 19% 94%, 3% 22%);
+          clip-path: polygon(50% 0%, 100% 31%, 80% 79%, 19% 94%, 3% 22%);
+}
+
+#slide2Img > div {
+  height: calc(100% - 10px);
+  width: calc(100% - 10px);
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background-color: #008dd2;
+  -webkit-clip-path: polygon(39% 13%, 100% 20%, 87% 86%, 14% 93%, 3% 49%);
+          clip-path: polygon(39% 13%, 100% 20%, 87% 86%, 14% 93%, 3% 49%);
+}
+
+#slide3Img > div {
+  height: calc(100% - 10px);
+  width: calc(100% - 10px);
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background-color: #008dd2;
+  -webkit-clip-path: polygon(3% 9%, 63% 7%, 96% 39%, 93% 96%, 15% 86%);
+          clip-path: polygon(3% 9%, 63% 7%, 96% 39%, 93% 96%, 15% 86%);
+}
+
+#slide1Img > div > div {
+  height: calc(100% - 10px);
+  width: calc(100% - 10px);
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background-image: url(/img/carouselv1.jpg);
+  -webkit-clip-path: polygon(50% 0%, 100% 31%, 80% 79%, 19% 94%, 3% 22%);
+          clip-path: polygon(50% 0%, 100% 31%, 80% 79%, 19% 94%, 3% 22%);
+}
+
+#slide2Img > div > div {
+  height: calc(100% - 10px);
+  width: calc(100% - 10px);
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background-image: url(/img/carouselv2.jpg);
+  -webkit-clip-path: polygon(39% 13%, 100% 20%, 87% 86%, 14% 93%, 3% 49%);
+          clip-path: polygon(39% 13%, 100% 20%, 87% 86%, 14% 93%, 3% 49%);
+}
+
+#slide3Img > div > div {
+  height: calc(100% - 10px);
+  width: calc(100% - 10px);
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background-image: url(/img/carouselv3.jpg);
+  -webkit-clip-path: polygon(3% 9%, 63% 7%, 96% 39%, 93% 96%, 15% 86%);
+          clip-path: polygon(3% 9%, 63% 7%, 96% 39%, 93% 96%, 15% 86%);
+}
+
+.sliderButton {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 100%;
+  background-color: rgba(1, 1, 1, 0);
+  border: none;
+  color: white;
+}
+
+.sliderButton i {
+  font-size: 2rem;
+}
+
+#previous {
+  left: 2%;
+}
+
+#next {
+  right: 2%;
+}
+/*# sourceMappingURL=style.css.map */
