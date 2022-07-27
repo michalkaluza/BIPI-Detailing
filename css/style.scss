@@ -254,7 +254,7 @@ $slideImgClipPath3: polygon(41% 4%, 100% 19%, 92% 87%, 3% 89%, 0 39%);
     position: absolute;
     top: 5px;
     left: 5px;
-    background-image: url(/img/carousel1.jpg);
+    background-image: url('../img/carousel1.jpg');
     clip-path: $slideImgClipPath1;
 
 }
@@ -265,7 +265,7 @@ $slideImgClipPath3: polygon(41% 4%, 100% 19%, 92% 87%, 3% 89%, 0 39%);
     position: absolute;
     top: 5px;
     left: 5px;
-    background-image: url(/img/carousel2.jpg);
+    background-image: url('../img/carousel2.jpg');
     background-position: 0 10%;
     clip-path: $slideImgClipPath2;
 }
@@ -276,7 +276,7 @@ $slideImgClipPath3: polygon(41% 4%, 100% 19%, 92% 87%, 3% 89%, 0 39%);
     position: absolute;
     top: 5px;
     left: 5px;
-    background-image: url(/img/carousel3.jpg);
+    background-image: url('../img/carousel3.jpg');
     clip-path: $slideImgClipPath3;
 }
 

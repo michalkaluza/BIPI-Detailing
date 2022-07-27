@@ -244,7 +244,7 @@ body {
   position: absolute;
   top: 5px;
   left: 5px;
-  background-image: url(/img/carousel1.jpg);
+  background-image: url("../img/carousel1.jpg");
   -webkit-clip-path: polygon(50% 0%, 100% 31%, 98% 90%, 19% 94%, 0% 21%);
           clip-path: polygon(50% 0%, 100% 31%, 98% 90%, 19% 94%, 0% 21%);
 }
@@ -255,7 +255,7 @@ body {
   position: absolute;
   top: 5px;
   left: 5px;
-  background-image: url(/img/carousel2.jpg);
+  background-image: url("../img/carousel2.jpg");
   background-position: 0 10%;
   -webkit-clip-path: polygon(36% 0%, 100% 24%, 96% 85%, 4% 95%, 0 18%);
           clip-path: polygon(36% 0%, 100% 24%, 96% 85%, 4% 95%, 0 18%);
@@ -267,7 +267,7 @@ body {
   position: absolute;
   top: 5px;
   left: 5px;
-  background-image: url(/img/carousel3.jpg);
+  background-image: url("../img/carousel3.jpg");
   -webkit-clip-path: polygon(41% 4%, 100% 19%, 92% 87%, 3% 89%, 0 39%);
           clip-path: polygon(41% 4%, 100% 19%, 92% 87%, 3% 89%, 0 39%);
 }
