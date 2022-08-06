@@ -10,6 +10,10 @@ ul {
   list-style: none;
 }
 
+.nav-link:focus, .nav-link:hover {
+  color: #e6e6e6;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -19,10 +23,9 @@ html {
 }
 
 body {
-  height: 500vh;
+  min-height: 500vh;
   background: #1a1a1a;
   font-family: 'Poppins', sans-serif;
-  overflow: hidden;
 }
 
 .longText {
@@ -412,6 +415,22 @@ body {
   overflow: hidden;
 }
 
+.services .service .wrap .longText {
+  min-height: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services .service .wrap .longText p {
+  margin-bottom: 0;
+  padding: 1rem;
+  width: 100%;
+}
+
 .services .service:hover .serviceBcg {
   -webkit-transform: scale(110%);
           transform: scale(110%);
@@ -422,12 +441,25 @@ body {
           transform: translate(-50%, -50%) scale(91%);
 }
 
+@media all and (max-width: 768px) {
+  .services .service .wrap {
+    overflow-y: auto;
+  }
+  .services .service:hover .serviceBcg {
+    -webkit-transform: none;
+            transform: none;
+  }
+  .services .service:hover .serviceBcg h2 {
+    -webkit-transform: translate(-50%, -50%) scale(100%);
+            transform: translate(-50%, -50%) scale(100%);
+  }
+}
+
 .services .serviceBcg {
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 1rem;
   position: relative;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -455,30 +487,30 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(90, 90, 90, 0.6);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
-.services #serviceBcg1 {
+.services .serviceBcg1 {
   background-image: url(../img/service1s.jpg);
 }
 
-.services #serviceBcg2 {
+.services .serviceBcg2 {
   background-image: url(../img/service2s.jpg);
 }
 
-.services #serviceBcg3 {
+.services .serviceBcg3 {
   background-image: url(../img/service3s.jpg);
 }
 
-.services #serviceBcg4 {
+.services .serviceBcg4 {
   background-image: url(../img/service4s.jpg);
 }
 
-.services #serviceBcg5 {
+.services .serviceBcg5 {
   background-image: url(../img/service5s.jpg);
 }
 
-.services #serviceBcg6 {
+.services .serviceBcg6 {
   background-image: url(../img/service6s.jpg);
 }
 
@@ -493,17 +525,27 @@ body {
   color: white;
 }
 
+.servicesPopupWrap p {
+  margin-bottom: 0;
+  text-align: center;
+}
+
 .servicesPopupWrap .servicesPopup {
   position: absolute;
-  top: 10%;
-  left: 25%;
-  width: 50%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  max-width: 50%;
+  max-height: 100%;
   background-color: #1a1a1a;
-  z-index: 4;
   padding: 2rem;
   border-radius: 1%;
   -webkit-box-shadow: 0px 0px 28px -9px black;
           box-shadow: 0px 0px 28px -9px black;
+  z-index: 1;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }
 
 .servicesPopupWrap .servicesPopup h1 {
@@ -521,17 +563,17 @@ body {
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
+  gap: 1rem;
+  -ms-grid-columns: auto 3rem auto;
+      grid-template-columns: auto 3rem auto;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  gap: 1rem;
-}
-
-.servicesPopupWrap .servicesPopup .popupPricing p {
-  margin-bottom: 0;
 }
 
 .servicesPopupWrap .servicesPopup .popupPricing span {
@@ -544,85 +586,42 @@ body {
   font-weight: bold;
 }
 
-#popupService1 .popupPricing {
-  -ms-grid-columns: auto 3rem auto;
-      grid-template-columns: auto 3rem auto;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
-      grid-template-areas: "s1 span1  price1" "s2 span2  price2" "s3 span3  price3";
+.servicesPopupWrap .servicesPopup .closeServicePopupStyle {
+  position: absolute;
+  top: 4%;
+  right: 0;
+  width: 2rem;
+  height: 2rem;
+  -webkit-transform: translateX(92%) translateZ(-1rem);
+          transform: translateX(92%) translateZ(-1rem);
+  z-index: -666;
+  background-color: #333333;
+  color: white;
+  border: none;
+  border-radius: 15%;
+  -webkit-box-shadow: 0px 0px 28px -9px black;
+          box-shadow: 0px 0px 28px -9px black;
 }
 
-#popupService1 .popupPricing .s1 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: s1;
+#popupService5 .servicesPopup {
+  max-width: 90%;
+  min-width: 80%;
 }
 
-#popupService1 .popupPricing .span1 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: span1;
+#popupService5 .popupPricing {
+  margin-bottom: 2rem;
 }
 
-#popupService1 .popupPricing .price1 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  grid-area: price1;
-}
-
-#popupService1 .popupPricing .s2 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: s2;
-}
-
-#popupService1 .popupPricing .span2 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: span2;
-}
-
-#popupService1 .popupPricing .price2 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
-  grid-area: price2;
-}
-
-#popupService1 .popupPricing .s3 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: s3;
-}
-
-#popupService1 .popupPricing .span3 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-  grid-area: span3;
-}
-
-#popupService1 .popupPricing .type1 {
-  grid-area: type1;
-}
-
-#popupService1 .popupPricing .price3 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
-  grid-area: price3;
-}
-
-#popupService1 .popupPricing .type2 {
-  grid-area: type2;
-}
-
-#popupService1 .popupPricing .price4 {
-  grid-area: price4;
-}
-
-#popupService1 .popupPricing .type3 {
-  grid-area: type3;
-}
-
-#popupService1 .popupPricing .price5 {
-  grid-area: price5;
+@media all and (max-width: 1399px) {
+  .servicesPopupWrap .servicesPopup p {
+    font-size: 0.8rem;
+  }
+  .servicesPopupWrap .servicesPopup h1 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+  .servicesPopupWrap .servicesPopup .description {
+    margin-bottom: 1.5rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

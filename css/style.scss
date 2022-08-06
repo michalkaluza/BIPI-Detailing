@@ -19,6 +19,10 @@ ul {
     list-style: none;
 }
 
+.nav-link:focus, .nav-link:hover {
+    color: $main-bright-grey;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -28,10 +32,10 @@ html {
 }
 
 body {
-    height: 500vh;
+    min-height: 500vh;
     background: $main-dark-grey;
     font-family: 'Poppins', sans-serif;
-    overflow: hidden;
+
 }
 
 .longText {
@@ -409,6 +413,10 @@ $slideImgClipPath3: polygon(41% 4%, 100% 19%, 92% 87%, 3% 89%, 0 39%);
     }
 }
 
+
+// services
+
+
 .services {
     color: white;
 
@@ -427,7 +435,22 @@ $slideImgClipPath3: polygon(41% 4%, 100% 19%, 92% 87%, 3% 89%, 0 39%);
         height: 20rem;
         overflow: hidden;
 
+        .longText {
+            min-height: 20rem;
+            display: flex;
+            align-items: center;
+
+
+            p {
+                margin-bottom: 0;
+                padding: 1rem;
+                width: 100%;
+            }
+        }
+
     }
+
+   
 
     .service:hover {
 
@@ -435,7 +458,7 @@ $slideImgClipPath3: polygon(41% 4%, 100% 19%, 92% 87%, 3% 89%, 0 39%);
             transform: scale(110%);
 
             h2 {
-                transform: translate(-50%, -50%)  scale(91%);
+                transform: translate(-50%, -50%) scale(91%);
             }
         }
 
@@ -444,13 +467,28 @@ $slideImgClipPath3: polygon(41% 4%, 100% 19%, 92% 87%, 3% 89%, 0 39%);
 
     }
 
+    @media all and (max-width: 768px) {
+        .service .wrap {
+            overflow-y: auto;
+        }
+        .service:hover {
+
+            .serviceBcg {
+                transform: none;
+                h2 {
+                    transform: translate(-50%, -50%) scale(100%);
+                }
+            }
+        }
+    } 
+
 
     .serviceBcg {
         height: 100%;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        margin-bottom: 1rem;
+        // margin-bottom: 1rem;
         position: relative;
         transition: 0.3s;
         cursor: pointer;
@@ -474,32 +512,32 @@ $slideImgClipPath3: polygon(41% 4%, 100% 19%, 92% 87%, 3% 89%, 0 39%);
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(90, 90, 90, 0.6);
+            background-color: rgba(0, 0, 0, 0.6);
         }
     }
 
 
-    #serviceBcg1 {
+    .serviceBcg1 {
         background-image: url(../img/service1s.jpg)
     }
 
-    #serviceBcg2 {
+    .serviceBcg2 {
         background-image: url(../img/service2s.jpg);
     }
 
-    #serviceBcg3 {
+    .serviceBcg3 {
         background-image: url(../img/service3s.jpg);
     }
 
-    #serviceBcg4 {
+    .serviceBcg4 {
         background-image: url(../img/service4s.jpg);
     }
 
-    #serviceBcg5 {
+    .serviceBcg5 {
         background-image: url(../img/service5s.jpg);
     }
 
-    #serviceBcg6 {
+    .serviceBcg6 {
         background-image: url(../img/service6s.jpg);
     }
 
@@ -516,126 +554,124 @@ $slideImgClipPath3: polygon(41% 4%, 100% 19%, 92% 87%, 3% 89%, 0 39%);
     z-index: 3;
     color: white;
 
+    p {
+        margin-bottom: 0;
+        text-align: center;
+    }
+
     .servicesPopup {
         position: absolute;
-        top: 10%;
-        left: 25%;
-        width: 50%;
-        // min-height: 70vh;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 50%;
+        max-height: 100%;
         background-color: $main-dark-grey;
-        z-index: 4;
-        padding: 2rem;;
+        padding: 2rem;
         border-radius: 1%;
         box-shadow: 0px 0px 28px -9px rgba(0, 0, 0, 1);
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: space-around;
-
+        z-index: 1;
+        transform-style: preserve-3d;
 
         h1 {
             text-align: center;
             color: $main-blue;
             margin-bottom: 3rem;
-        }  
-        
+        }
+
         .description {
             margin-bottom: 3rem;
         }
-        
-        .popupPricing {
 
+        .popupPricing {
             width: 80%;
             margin: 0 auto;
-
+            
             display: grid;
+            gap: 1rem;
+            grid-template-columns: auto 3rem auto;
+            grid-template-rows: auto;
             align-items: center;
             justify-items: center;
             justify-content: space-around;
-            gap: 1rem;
 
-            p {
-                margin-bottom: 0;
-             }
 
-             span {
+
+            span {
                 width: 100%;
                 height: 2px;
                 background-color: $main-blue;
-        
+
             }
 
             .serviceName {
-                font-weight: bold; 
+                font-weight: bold;
             }
+        }
 
-            
+        .closeServicePopupStyle {
+            position: absolute;
+            top: 4%;
+            right: 0;
+            width: 2rem;
+            height: 2rem;
+            transform: translateX(92%) translateZ(-1rem);
+            // isolation: isolate;
+            z-index: -666;
+
+            background-color: rgb(51, 51, 51);
+            color: white;
+            border: none;
+            border-radius: 15%;
+            box-shadow: 0px 0px 28px -9px rgba(0, 0, 0, 1);
 
         }
-            
-
-        
-        
     }
-    
-
-
-}
-
-#popupService1 .popupPricing {
-
-    
-    grid-template-columns: auto 3rem auto;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "s1 span1  price1"
-    "s2 span2  price2"
-    "s3 span3  price3"
-    ;  
-    
-    
-.s1 {
-    grid-area: s1;
-}
-.span1 {
-    grid-area: span1;
-}
-.price1 {
-    grid-area: price1;
-}
-.s2 {
-    grid-area: s2;
-}
-.span2 {
-    grid-area: span2;
-}
-.price2 {
-    grid-area: price2;
-}
-.s3 {
-    grid-area: s3;
-}
-.span3 {
-    grid-area: span3;
-}
-.type1 {
-    grid-area: type1;
-}
-.price3 {
-    grid-area: price3;
-}
-.type2 {
-    grid-area: type2;
-}
-.price4 {
-    grid-area: price4;
-}
-.type3 {
-    grid-area: type3;
-}
-.price5 {
-    grid-area: price5;
-}
-    
 }
 
 
+#popupService5 {
+
+    .servicesPopup {
+        max-width: 90%;
+        min-width: 80%;
+
+    }
+
+    .popupPricing {
+        margin-bottom: 2rem;
+    }
+
+}
+
+@media all and (max-width: 1399px) {
+    .servicesPopupWrap {
+
+        .servicesPopup{
+            p {
+                font-size: 0.8rem;
+            }
+
+            h1 {
+                margin-bottom: 2rem;
+                font-size: 2rem;
+            }
+
+            .description {
+                margin-bottom: 1.5rem;
+            }
+
+        }
+    }
+
+   
+
+
+
+
+
+
+
+
+
+}
