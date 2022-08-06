@@ -142,13 +142,14 @@ body {
     height: 100%;
     position: relative;
     text-align: center;
+    padding: 0;
 }
 
 .slider {
     height: calc(100vh - #{$navbarHeight});
     position: relative;
     color: $main-bright-grey;
-    // z-index: -1;
+    z-index: -1;
 }
 
 .slide {
@@ -161,7 +162,7 @@ body {
     padding: 7vh 2vw 3vh;
     margin: 0 auto;
     opacity: 0;
-    transition: 0.3s;
+    transition: 0.5s;
 
 
     p {
@@ -188,7 +189,7 @@ body {
         max-width: 100%;
 
         .slideImg {
-            width: 90%;
+            width: 80%;
             min-width: 1px;
             height: 70%;
             min-height: 1px;
@@ -492,6 +493,7 @@ $slideImgClipPath3: polygon(41% 4%, 100% 19%, 92% 87%, 3% 89%, 0 39%);
         position: relative;
         transition: 0.3s;
         cursor: pointer;
+        overflow: hidden;
 
         h2 {
             font-size: 1.8rem;
