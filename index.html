@@ -19,361 +19,505 @@
 </head>
 
 <body>
-  <div class="siteWrap">
 
-    <header>
-      <nav class="navbar navbar-expand-md">
-        <a href="X" class="navbar-brand ms-5 mt-3"><img src="./img/logopng.png" alt="" class="d-inline-block"></a>
-        <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#collmenu">
-
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collmenu">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse flex-row-reverse" id="collmenu">
-            <div class="social-media d-none d-md-flex me-5">
-              <a href="#"><img src="./img/iglogo.png" alt=""></a>
-              <a href="#"><img src="./img/fblogo.png" alt=""></a>
-            </div>
-            <ul class="navbar-nav gap-md-5 me-md-5 text-center">
-              <li class="nav-item">
-                <a href="#" class="nav-link">Strona główna</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">O nas</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Usługi</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Cennik</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Kontakt</a>
-              </li>
-            </ul>
-
-
+  <header>
+    <nav class="navbar navbar-expand-md">
+      <a href="X" class="navbar-brand ms-5 mt-3"><img src="./img/logopng.png" alt="" class="d-inline-block"></a>
+      <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#collmenu">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collmenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="collmenu">
+          <ul class="navbar-nav gap-md-5 me-md-5 text-center">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Strona główna</a>
+            </li>
+            <li class="nav-item">
+              <a href="#oNas" class="nav-link">O nas</a>
+            </li>
+            <li class="nav-item">
+              <a href="#uslugi" class="nav-link">Usługi</a>
+            </li>
+            <li class="nav-item">
+              <a href="#cennik" class="nav-link">Cennik</a>
+            </li>
+            <li class="nav-item">
+              <a href="#kontakt" class="nav-link">Kontakt</a>
+            </li>
+          </ul>
+          <div class="social-media d-flex me-md-5 py-3 py-md-0">
+            <a href="https://www.instagram.com/bp.detailing_/"><img src="./img/iglogo.png" alt=""></a>
+            <a href="https://www.facebook.com/BipiDetailing"><img src="./img/fblogo.png" alt=""></a>
           </div>
-
-
-      </nav>
-    </header>
-
-
-    <section class="slider ">
-      <div class="container">
-        <div id="slide1" class="slide flex-column flex-md-row-reverse activeSlide">
-          <div class="slideImg col-12 col-md-6" id="slide1Img">
-            <div>
-              <div></div>
-            </div>
-          </div>
-          <p class="col-md-6 px-md-5 pt-3"><span>Kompleksowo</span> zadbany o czystość Twojego auta</p>
         </div>
-        <div id="slide2" class="slide flex-column flex-md-row ">
-          <div class="slideImg col-md-6" id="slide2Img">
-            <div>
-              <div></div>
-            </div>
+    </nav>
+  </header>
+
+
+  <section class="slider ">
+    <div class="container">
+      <div id="slide1" class="slide flex-column flex-md-row-reverse activeSlide">
+        <div class="slideImg col-12 col-md-6" id="slide1Img">
+          <div>
+            <div></div>
           </div>
-          <p class="col-md-6"><span>Profesjonalna</span> myjnia ręczna i studio detailingu</p>
         </div>
-        <div id="slide3" class="slide flex-column flex-md-row-reverse ">
-          <div class="slideImg col-md-6" id="slide3Img">
-            <div>
-              <div></div>
+        <p class="col-md-6 px-md-5 pt-3"><span>Kompleksowo</span> zadbany o czystość Twojego auta</p>
+      </div>
+      <div id="slide2" class="slide flex-column flex-md-row ">
+        <div class="slideImg col-md-6" id="slide2Img">
+          <div>
+            <div></div>
+          </div>
+        </div>
+        <p class="col-md-6"><span>Profesjonalna</span> myjnia ręczna i studio detailingu</p>
+      </div>
+      <div id="slide3" class="slide flex-column flex-md-row-reverse ">
+        <div class="slideImg col-md-6" id="slide3Img">
+          <div>
+            <div></div>
+          </div>
+        </div>
+        <p class="col-md-6">Pielęgnacja auta na <span>najwyższym</span> poziomie</p>
+      </div>
+    </div>
+    <div class="sliderButton" id='previous'><button><i class="fa-solid fa-angle-left"></i></button></div>
+    <div class="sliderButton" id='next'><button><i class="fa-solid fa-angle-right"></i></button></div>
+    <div class="slideIndicators">
+      <button id="showSlide1" data-index="0" class="activeIndicator"></button>
+      <button id="showSlide2" data-index="1"></button>
+      <button id="showSlide3" data-index="2"></button>
+    </div>
+  </section>
+
+
+  <section id="oNas" class="oNas">
+    <div class="oNasBcg">
+      <div class="oNasWrap d-flex">
+        <h1 class="sectionTitle">O nas</h1>
+        <p class="longText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, incidunt a. Ut, at
+          deserunt
+          ullam consequatur esse quos quod voluptatibus in totam voluptatem asperiores dignissimos porro
+          exercitationem
+          dolor ex eum.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="uslugi" class="services">
+    <h1 class="sectionTitle">Usługi</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 service">
+          <div class="wrap">
+            <div class="popupService1 serviceBcg serviceBcg1">
+              <h2 class="popupService1">Zabezpieczenie lakieru</h2>
+            </div>
+            <div class="longText d-md-none">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae soluta consequuntur accusantium
+                ducimus, similique temporibus tenetur harum suscipit ratione quisquam, sunt error eaque dolores
+                aperiam? Dolore expedita consequuntur architecto necessitatibus. Lorem ipsum dolor sit, amet consectetur
+                adipisicing elit. Accusamus eligendi eum assumenda quae cupiditate expedita sit iure sed laudantium et.
+                Lorem ipsum dolor Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque excepturi asperiores
+                placeat quae labore dignissimos dolore, explicabo officiis iure amet.</p>
             </div>
           </div>
-          <p class="col-md-6">Pielęgnacja auta na <span>najwyższym</span> poziomie</p>
+        </div>
+        <div class="col-md-4 service">
+          <div class="wrap">
+
+            <div class="serviceBcg serviceBcg2 popupService2">
+              <h2 class="popupService2">Zabezpieczenie felg</h2>
+            </div>
+            <div class="longText d-md-none">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae soluta consequuntur accusantium
+                ducimus, similique temporibus tenetur harum suscipit ratione quisquam, sunt error eaque dolores
+                aperiam? Dolore expedita consequuntur architecto necessitatibus. Lorem ipsum dolor sit, amet consectetur
+                adipisicing elit. Accusamus eligendi eum assumenda quae cupiditate expedita sit iure sed laudantium et.
+                Lorem ipsum dolor Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque excepturi asperiores
+                placeat quae labore dignissimos dolore, explicabo officiis iure amet.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 service">
+          <div class="wrap">
+            <div class="serviceBcg serviceBcg3 popupService3">
+              <h2 class="popupService3">Zabezpieczenie szyb</h2>
+            </div>
+            <div class="longText d-md-none">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae soluta consequuntur accusantium
+                ducimus, similique temporibus tenetur harum suscipit ratione quisquam, sunt error eaque dolores
+                aperiam? Dolore expedita consequuntur architecto necessitatibus. Lorem ipsum dolor sit, amet consectetur
+                adipisicing elit. Accusamus eligendi eum assumenda quae cupiditate expedita sit iure sed laudantium et.
+                Lorem ipsum dolor Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque excepturi asperiores
+                placeat quae labore dignissimos dolore, explicabo officiis iure amet.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 service">
+          <div class="wrap">
+            <div class="serviceBcg serviceBcg4 popupService4">
+              <h2 class="popupService4">Renowacja lakieru</h2>
+            </div>
+            <div class="longText d-md-none">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae soluta consequuntur accusantium
+                ducimus, similique temporibus tenetur harum suscipit ratione quisquam, sunt error eaque dolores
+                aperiam? Dolore expedita consequuntur architecto necessitatibus. Lorem ipsum dolor sit, amet consectetur
+                adipisicing elit. Accusamus eligendi eum assumenda quae cupiditate expedita sit iure sed laudantium et.
+                Lorem ipsum dolor Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque excepturi asperiores
+                placeat quae labore dignissimos dolore, explicabo officiis iure amet.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 service">
+          <div class="wrap">
+            <div class="serviceBcg serviceBcg5 popupService5">
+              <h2 class="popupService5">Detailing wewnętrzny</h2>
+            </div>
+            <div class="longText d-md-none">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae soluta consequuntur accusantium
+                ducimus, similique temporibus tenetur harum suscipit ratione quisquam, sunt error eaque dolores
+                aperiam? Dolore expedita consequuntur architecto necessitatibus. Lorem ipsum dolor sit, amet consectetur
+                adipisicing elit. Accusamus eligendi eum assumenda quae cupiditate expedita sit iure sed laudantium et.
+                Lorem ipsum dolor Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque excepturi asperiores
+                placeat quae labore dignissimos dolore, explicabo officiis iure amet.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 service mb-3 mb-md-0">
+          <div class="wrap">
+            <div class="serviceBcg serviceBcg6 popupService6">
+              <h2 class="popupService6">Detailing zewnętrzny</h2>
+            </div>
+            <div class="longText d-md-none">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae soluta consequuntur accusantium
+                ducimus, sipturi asperiores placeat quae labore dignissimos dolore, explicabo officiis iure amet.</p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="sliderButton" id='previous'><button><i class="fa-solid fa-angle-left"></i></button></div>
-      <div class="sliderButton" id='next'><button><i class="fa-solid fa-angle-right"></i></button></div>
-      <div class="slideIndicators">
-        <button id="showSlide1" data-index="0" class="activeIndicator"></button>
-        <button id="showSlide2" data-index="1"></button>
-        <button id="showSlide3" data-index="2"></button>
-      </div>
-    </section>
+    </div>
+  </section>
 
 
-
-    <section class="oNas">
-      <div class="oNasBcg">
-        <div class="oNasWrap d-flex">
-          <h1 class="sectionTitle">O nas</h1>
-          <p class="longText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, incidunt a. Ut, at
-            deserunt
-            ullam consequatur esse quos quod voluptatibus in totam voluptatem asperiores dignissimos porro
-            exercitationem
-            dolor ex eum.</p>
+  <section id="popupService1" class="servicesPopupWrap displayNone closeServicePopup">
+    <div class="servicesPopup">
+      <h1>Zabezpieczenie lakieru</h1>
+      <p class="description longText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ab rem, eos
+        tempore tenetur, nisi voluptates libero praesentium perferendis labore omnis est dolor cupiditate culpa
+        maiores
+        reiciendis ad veritatis? Maiores totam incidunt neque corrupti cum nulla quas? Animi illo aut, nemo iusto
+        harum,
+        ut inventore ullam eum, provident veniam placeat.</p>
+      <div class="popupPricing">
+        <p class="serviceName">Aplikacja wosku</p>
+        <span></span>
+        <p>100zł - 200zł</p>
+        <p class="serviceName">Aplikacja quick detailera</p>
+        <span></span>
+        <p>w cenie mycia detailingowego</p>
+        <p class="serviceName">Powłoka ceramiczna</p>
+        <span></span>
+        <div>
+          <p>roczna 1000zł</p>
+          <p>dwuletnia 2000zł</p>
+          <p>pięcioletnia 3000zł</p>
         </div>
       </div>
-    </section>
+      <button class="closeServicePopupStyle closeServicePopup"><i class="fa-solid fa-x closeServicePopup"></i></button>
+    </div>
+  </section>
 
-    <section class="services">
-      <h1 class="sectionTitle">Usługi</h1>
-      <div class="container">
-        <div class="row">
-
-          <div class="col-md-4 service">
-            <div class="wrap">
-              <div class="popupService1 serviceBcg serviceBcg1">
-                <h2 class="popupService1">Zabezpieczenie lakieru</h2>
-              </div>
-              <div class="longText">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae soluta consequuntur accusantium
-                  ducimus, similique temporibus tenetur harum suscipit ratione quisquam, sunt error eaque dolores
-                  aperiam? Dolore expedita consequuntur architecto necessitatibus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus eligendi eum assumenda quae cupiditate expedita sit iure sed laudantium et. Lorem ipsum dolor Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque excepturi asperiores placeat quae labore dignissimos dolore, explicabo officiis iure amet.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 service">
-            <div class="wrap">
-
-              <div class="serviceBcg serviceBcg2 popupService2">
-                <h2 class="popupService2">Zabezpieczenie felg</h2>
-              </div>
-              <div class="longText">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae soluta consequuntur accusantium
-                  ducimus, similique temporibus tenetur harum suscipit ratione quisquam, sunt error eaque dolores
-                  aperiam? Dolore expedita consequuntur architecto necessitatibus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus eligendi eum assumenda quae cupiditate expedita sit iure sed laudantium et. Lorem ipsum dolor Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque excepturi asperiores placeat quae labore dignissimos dolore, explicabo officiis iure amet.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 service">
-            <div class="wrap">
-              <div class="serviceBcg serviceBcg3 popupService3">
-                <h2 class="popupService3">Zabezpieczenie szyb</h2>
-              </div>
-              <div class="longText">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae soluta consequuntur accusantium
-                  ducimus, similique temporibus tenetur harum suscipit ratione quisquam, sunt error eaque dolores
-                  aperiam? Dolore expedita consequuntur architecto necessitatibus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus eligendi eum assumenda quae cupiditate expedita sit iure sed laudantium et. Lorem ipsum dolor Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque excepturi asperiores placeat quae labore dignissimos dolore, explicabo officiis iure amet.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 service">
-            <div class="wrap">
-
-              <div class="serviceBcg serviceBcg4 popupService4">
-                <h2 class="popupService4">Renowacja lakieru</h2>
-              </div>
-              <div class="longText">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae soluta consequuntur accusantium
-                  ducimus, similique temporibus tenetur harum suscipit ratione quisquam, sunt error eaque dolores
-                  aperiam? Dolore expedita consequuntur architecto necessitatibus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus eligendi eum assumenda quae cupiditate expedita sit iure sed laudantium et. Lorem ipsum dolor Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque excepturi asperiores placeat quae labore dignissimos dolore, explicabo officiis iure amet.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 service">
-            <div class="wrap">
-
-              <div class="serviceBcg serviceBcg5 popupService5">
-                <h2 class="popupService5">Detailing wewnętrzny</h2>
-              </div>
-              <div class="longText">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae soluta consequuntur accusantium
-                  ducimus, similique temporibus tenetur harum suscipit ratione quisquam, sunt error eaque dolores
-                  aperiam? Dolore expedita consequuntur architecto necessitatibus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus eligendi eum assumenda quae cupiditate expedita sit iure sed laudantium et. Lorem ipsum dolor Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque excepturi asperiores placeat quae labore dignissimos dolore, explicabo officiis iure amet.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 service">
-            <div class="wrap">
-
-              <div class="serviceBcg serviceBcg6 popupService6">
-                <h2 class="popupService6">Detailing zewnętrzny</h2>
-              </div>
-              <div class="longText">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae soluta consequuntur accusantium
-                  ducimus, sipturi asperiores placeat quae labore dignissimos dolore, explicabo officiis iure amet.</p>
-              </div>
-            </div>
-          </div>
-        </div>
+  <section id="popupService2" class="servicesPopupWrap displayNone closeServicePopup">
+    <div class="servicesPopup">
+      <h1>Zabezpieczenie felg</h1>
+      <p class="description longText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ab rem, eos
+        tempore tenetur, nisi voluptates libero praesentium perferendis labore omnis est dolor cupiditate culpa
+        maiores
+        reiciendis ad veritatis? Maiores totam incidunt neque corrupti cum nulla quas? Animi illo aut, nemo iusto
+        harum,
+        ut inventore ullam eum, provident veniam placeat.</p>
+      <div class="popupPricing">
+        <p class="serviceName">Aplikacja wosku</p>
+        <span></span>
+        <p>100zł</p>
+        <p class="serviceName">Powłoka ceramiczna</p>
+        <span></span>
+        <p>od 100zł</p>
       </div>
-    </section>
+      <button class="closeServicePopupStyle closeServicePopup"><i class="fa-solid fa-x closeServicePopup"></i></button>
+    </div>
+  </section>
 
-    <section id="popupService1" class="servicesPopupWrap displayNone closeServicePopup">
-      <div class="servicesPopup">
+  <section id="popupService3" class="servicesPopupWrap displayNone closeServicePopup">
+    <div class="servicesPopup">
+      <h1>Zabezpieczenie szyb</h1>
+      <p class="description longText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ab rem, eos
+        tempore tenetur, nisi voluptates libero praesentium perferendis labore omnis est dolor cupiditate culpa
+        maiores
+        reiciendis ad veritatis? Maiores totam incidunt neque corrupti cum nulla quas? Animi illo aut, nemo iusto
+        harum,
+        ut inventore ullam eum, provident veniam placeat.</p>
+      <div class="popupPricing">
+        <p class="serviceName">Szyba czołowa</p>
+        <span></span>
+        <p>80zł</p>
+        <p class="serviceName">Wszystkie szyby</p>
+        <span></span>
+        <p>150zł</p>
+      </div>
+      <button class="closeServicePopupStyle closeServicePopup"><i class="fa-solid fa-x closeServicePopup"></i></button>
+    </div>
+  </section>
+
+  <section id="popupService4" class="servicesPopupWrap displayNone closeServicePopup">
+    <div class="servicesPopup">
+      <h1>Renowacja lakieru</h1>
+      <p class="description longText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ab rem, eos
+        tempore tenetur, nisi voluptates libero praesentium perferendis labore omnis est dolor cupiditate culpa
+        maiores
+        reiciendis ad veritatis? Maiores totam incidunt neque corrupti cum nulla quas? Animi illo aut, nemo iusto
+        harum,
+        ut inventore ullam eum, provident veniam placeat.</p>
+      <div class="popupPricing">
+        <p class="serviceName">One step (jednoetapowa korekta lakieru)</p>
+        <span></span>
+        <p>400 - 900zł</p>
+        <p class="serviceName">Dwuetapowa korekta lakieru</p>
+        <span></span>
+        <p>700 - 1500zł</p>
+        <p class="serviceName">Pełna korekta lakieru</p>
+        <span></span>
+        <p>1000 - 2000zł</p>
+      </div>
+      <button class="closeServicePopupStyle closeServicePopup"><i class="fa-solid fa-x closeServicePopup"></i></button>
+    </div>
+  </section>
+
+  <section id="popupService5" class="servicesPopupWrap displayNone closeServicePopup">
+    <div class="servicesPopup">
+      <h1>Detailing wewnętrzny</h1>
+      <p class="description longText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ab rem, eos
+        tempore tenetur, nisi voluptates libero praesentium perferendis labore omnis est dolor cupiditate culpa
+        maiores
+        reiciendis ad veritatis? Maiores totam incidunt neque corrupti cum nulla quas? Animi illo aut, nemo iusto
+        harum,
+        ut inventore ullam eum, provident veniam placeat.</p>
+      <div class="popupPricing">
+        <p class="serviceName">Czyszczenie i impregnacja foteli skórzanych</p>
+        <span></span>
+        <p>od 250 zł (w zależności od stopnia zabrudzenia)</p>
+        <p class="serviceName">Czyszczenie wnętrza standard</p>
+        <span></span>
+        <p>70 - 130zł</p>
+        <p class="serviceName">czyszczenie wnętrza premium</p>
+        <span></span>
+        <p>150 - 320zł</p>
+        <p class="serviceName">Pranie tapicerki materiałowej</p>
+        <span></span>
+        <div>
+          <p>Fotele przód + tył - 150zł</p>
+          <p>Standard - 200zł</p>
+          <p>Full pakiet - 350zł</p>
+        </div>
+        <p class="serviceName">Impregnacja tapicerki materiałowej</p>
+        <span></span>
+        <div>
+          <p>Fotele i kanapa - 150zł</p>
+          <p>Podłoga i dywaniki - 100zł</p>
+        </div>
+        <p class="serviceName">Czyszczenie podsufitki</p>
+        <span></span>
+        <p>Wycena indywidualna (w zależności od stopnia zabrudzenia)</p>
+        <p class="serviceName">Czyszczenie i impregnacja alcantary</p>
+        <span></span>
+        <p>od 150zł</p>
+        <p class="serviceName">Ozonowanie</p>
+        <span></span>
+        <p>50zł</p>
+      </div>
+      <p>*Aplikacja perfum samochodowych (w cenie, na życzenie klienta)</p>
+      <button class="closeServicePopupStyle closeServicePopup"><i class="fa-solid fa-x closeServicePopup"></i></button>
+    </div>
+  </section>
+
+  <section id="popupService6" class="servicesPopupWrap displayNone closeServicePopup">
+    <div class="servicesPopup">
+      <h1>Detailing zewnętrzny</h1>
+      <p class="description longText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ab rem, eos
+        tempore tenetur, nisi voluptates libero praesentium perferendis labore omnis est dolor cupiditate culpa
+        maiores
+        reiciendis ad veritatis? Maiores totam incidunt neque corrupti cum nulla quas? Animi illo aut, nemo iusto
+        harum,
+        ut inventore ullam eum, provident veniam placeat.</p>
+      <div class="popupPricing">
+        <p class="serviceName">Mycie detailingowe + dekontaminacja</p>
+        <span></span>
+        <p>100 - 200zł</p>
+        <p class="serviceName">Polerowanie lamp + impregnacja</p>
+        <span></span>
+        <p>80zł/szt</p>
+        <p class="serviceName">Mycie, pielęgnacja silnika</p>
+        <span></span>
+        <p>od 150zł</p>
+        <p class="serviceName">Mycie podwozia</p>
+        <span></span>
+        <p>100 zł</p>
+        <p class="serviceName">Czyszczenie oraz zabezpieczenie dachu kabrio</p>
+        <span></span>
+        <p>Wycena indywidualna</p>
+      </div>
+      <button class="closeServicePopupStyle closeServicePopup"><i class="fa-solid fa-x closeServicePopup"></i></button>
+    </div>
+  </section>
+
+
+  <section id="cennik" class="priceList">
+    <h1 class="sectionTitle">Cennik</h1>
+    <div class="container">
+      <div>
         <h1>Zabezpieczenie lakieru</h1>
-        <p class="description longText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ab rem, eos
-          tempore tenetur, nisi voluptates libero praesentium perferendis labore omnis est dolor cupiditate culpa
-          maiores
-          reiciendis ad veritatis? Maiores totam incidunt neque corrupti cum nulla quas? Animi illo aut, nemo iusto
-          harum,
-          ut inventore ullam eum, provident veniam placeat.</p>
         <div class="popupPricing">
-          <p class="s1 serviceName">Aplikacja wosku</p>
-          <span class="span1"></span>
-          <p class="price1">100zł - 200zł</p>
-          <p class="s2 serviceName">Aplikacja quick detailera</p>
-          <span class="span2"></span>
-          <p class="price2">w cenie mycia detailingowego</p>
-          <p class="s3 serviceName">Powłoka ceramiczna</p>
-          <span class="span3"></span>
-          <div class="price3">
+          <p class="serviceName">Aplikacja wosku</p>
+          <span></span>
+          <p>100zł - 200zł</p>
+          <p class="serviceName">Aplikacja quick detailera</p>
+          <span></span>
+          <p>w cenie mycia detailingowego</p>
+          <p class="serviceName">Powłoka ceramiczna</p>
+          <span></span>
+          <div>
             <p>roczna 1000zł</p>
             <p>dwuletnia 2000zł</p>
             <p>pięcioletnia 3000zł</p>
           </div>
         </div>
-        <button class="closeServicePopupStyle closeServicePopup"><i
-            class="fa-solid fa-x closeServicePopup"></i></button>
       </div>
-    </section>
-
-    <section id="popupService2" class="servicesPopupWrap displayNone closeServicePopup">
-      <div class="servicesPopup">
+      <div>
         <h1>Zabezpieczenie felg</h1>
-        <p class="description longText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ab rem, eos
-          tempore tenetur, nisi voluptates libero praesentium perferendis labore omnis est dolor cupiditate culpa
-          maiores
-          reiciendis ad veritatis? Maiores totam incidunt neque corrupti cum nulla quas? Animi illo aut, nemo iusto
-          harum,
-          ut inventore ullam eum, provident veniam placeat.</p>
         <div class="popupPricing">
-          <p class="s1 serviceName">Aplikacja wosku</p>
-          <span class="span1"></span>
-          <p class="price1">100zł</p>
-          <p class="s2 serviceName">Powłoka ceramiczna</p>
-          <span class="span2"></span>
-          <p class="price2">od 100zł</p>
+          <p class="serviceName">Aplikacja wosku</p>
+          <span></span>
+          <p>100zł</p>
+          <p class="serviceName">Powłoka ceramiczna</p>
+          <span></span>
+          <p>od 100zł</p>
         </div>
-        <button class="closeServicePopupStyle closeServicePopup"><i
-            class="fa-solid fa-x closeServicePopup"></i></button>
       </div>
-    </section>
-
-    <section id="popupService3" class="servicesPopupWrap displayNone closeServicePopup">
-      <div class="servicesPopup">
+      <div>
         <h1>Zabezpieczenie szyb</h1>
-        <p class="description longText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ab rem, eos
-          tempore tenetur, nisi voluptates libero praesentium perferendis labore omnis est dolor cupiditate culpa
-          maiores
-          reiciendis ad veritatis? Maiores totam incidunt neque corrupti cum nulla quas? Animi illo aut, nemo iusto
-          harum,
-          ut inventore ullam eum, provident veniam placeat.</p>
         <div class="popupPricing">
-          <p class="s1 serviceName">Szyba czołowa</p>
-          <span class="span1"></span>
-          <p class="price1">80zł</p>
-          <p class="s2 serviceName">Wszystkie szyby</p>
-          <span class="span2"></span>
-          <p class="price2">150zł</p>
+          <p class="serviceName">Szyba czołowa</p>
+          <span></span>
+          <p>80zł</p>
+          <p class="serviceName">Wszystkie szyby</p>
+          <span></span>
+          <p>150zł</p>
         </div>
-        <button class="closeServicePopupStyle closeServicePopup"><i
-            class="fa-solid fa-x closeServicePopup"></i></button>
       </div>
-    </section>
-
-    <section id="popupService4" class="servicesPopupWrap displayNone closeServicePopup">
-      <div class="servicesPopup">
+      <div>
         <h1>Renowacja lakieru</h1>
-        <p class="description longText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ab rem, eos
-          tempore tenetur, nisi voluptates libero praesentium perferendis labore omnis est dolor cupiditate culpa
-          maiores
-          reiciendis ad veritatis? Maiores totam incidunt neque corrupti cum nulla quas? Animi illo aut, nemo iusto
-          harum,
-          ut inventore ullam eum, provident veniam placeat.</p>
         <div class="popupPricing">
-          <p class="s1 serviceName">One step (jednoetapowa korekta lakieru)</p>
-          <span class="span1"></span>
-          <p class="price1">400 - 900zł</p>
-          <p class="s2 serviceName">Dwuetapowa korekta lakieru</p>
-          <span class="span2"></span>
-          <p class="price2">700 - 1500zł</p>
-          <p class="s3 serviceName">Pełna korekta lakieru</p>
-          <span class="span3"></span>
-          <p class="price3">1000 - 2000zł</p>
+          <p class="serviceName">One step (jednoetapowa korekta lakieru)</p>
+          <span></span>
+          <p>400 - 900zł</p>
+          <p class="serviceName">Dwuetapowa korekta lakieru</p>
+          <span></span>
+          <p>700 - 1500zł</p>
+          <p class="serviceName">Pełna korekta lakieru</p>
+          <span></span>
+          <p>1000 - 2000zł</p>
         </div>
-        <button class="closeServicePopupStyle closeServicePopup"><i
-            class="fa-solid fa-x closeServicePopup"></i></button>
       </div>
-    </section>
-
-    <section id="popupService5" class="servicesPopupWrap displayNone closeServicePopup">
-      <div class="servicesPopup">
+      <div>
         <h1>Detailing wewnętrzny</h1>
-        <p class="description longText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ab rem, eos
-          tempore tenetur, nisi voluptates libero praesentium perferendis labore omnis est dolor cupiditate culpa
-          maiores
-          reiciendis ad veritatis? Maiores totam incidunt neque corrupti cum nulla quas? Animi illo aut, nemo iusto
-          harum,
-          ut inventore ullam eum, provident veniam placeat.</p>
         <div class="popupPricing">
-          <p class="s1 serviceName">Czyszczenie i impregnacja foteli skórzanych</p>
-          <span class="span1"></span>
-          <p class="price1">od 250 zł (w zależności od stopnia zabrudzenia)</p>
-          <p class="s2 serviceName">Czyszczenie wnętrza standard</p>
-          <span class="span2"></span>
-          <p class="price2">70 - 130zł</p>
-          <p class="s3 serviceName">czyszczenie wnętrza premium</p>
-          <span class="span3"></span>
-          <p class="price3">150 - 320zł</p>
-          <p class="s4 serviceName">Pranie tapicerki materiałowej</p>
-          <span class="span4"></span>
-          <div class="price4">
+          <p class="serviceName">Mycie detailingowe + dekontaminacja</p>
+          <span></span>
+          <p>100 - 200zł</p>
+          <p class="serviceName">Polerowanie lamp + impregnacja</p>
+          <span></span>
+          <p>80zł/szt</p>
+          <p class="serviceName">Mycie, pielęgnacja silnika</p>
+          <span></span>
+          <p>od 150zł</p>
+          <p class="serviceName">Mycie podwozia</p>
+          <span></span>
+          <p>100 zł</p>
+          <p class="serviceName">Czyszczenie oraz zabezpieczenie dachu kabrio</p>
+          <span></span>
+          <p>Wycena indywidualna</p>
+        </div>
+      </div>
+      <div>
+        <h1>Detailing zewnętrzny</h1>
+        <div class="popupPricing">
+          <p class="serviceName">Czyszczenie i impregnacja foteli skórzanych</p>
+          <span></span>
+          <p>od 250 zł (w zależności od stopnia zabrudzenia)</p>
+          <p class="serviceName">Czyszczenie wnętrza standard</p>
+          <span></span>
+          <p>70 - 130zł</p>
+          <p class="serviceName">czyszczenie wnętrza premium</p>
+          <span></span>
+          <p>150 - 320zł</p>
+          <p class="serviceName">Pranie tapicerki materiałowej</p>
+          <span></span>
+          <div>
             <p>Fotele przód + tył - 150zł</p>
             <p>Standard - 200zł</p>
             <p>Full pakiet - 350zł</p>
           </div>
-          <p class="s5 serviceName">Impregnacja tapicerki materiałowej</p>
-          <span class="span5"></span>
-          <div class="price5">
+          <p class="serviceName">Impregnacja tapicerki materiałowej</p>
+          <span></span>
+          <div>
             <p>Fotele i kanapa - 150zł</p>
             <p>Podłoga i dywaniki - 100zł</p>
           </div>
-          <p class="s6 serviceName">Czyszczenie podsufitki</p>
-          <span class="span6"></span>
-          <p class="price6">Wycena indywidualna (w zależności od stopnia zabrudzenia)</p>
-          <p class="s7 serviceName">Czyszczenie i impregnacja alcantary</p>
-          <span class="span7"></span>
-          <p class="price7">od 150zł</p>
-          <p class="s8 serviceName">Ozonowanie</p>
-          <span class="span8"></span>
-          <p class="price8">50zł</p>
+          <p class="serviceName">Czyszczenie podsufitki</p>
+          <span></span>
+          <p>Wycena indywidualna (w zależności od stopnia zabrudzenia)</p>
+          <p class="serviceName">Czyszczenie i impregnacja alcantary</p>
+          <span></span>
+          <p>od 150zł</p>
+          <p class="serviceName">Ozonowanie</p>
+          <span></span>
+          <p>50zł</p>
         </div>
-        <p>*Aplikacja perfum samochodowych (w cenie, na życzenie klienta)</p>
-        <button class="closeServicePopupStyle closeServicePopup"><i
-            class="fa-solid fa-x closeServicePopup"></i></button>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="popupService6" class="servicesPopupWrap displayNone closeServicePopup">
-      <div class="servicesPopup">
-        <h1>Detailing zewnętrzny</h1>
-        <p class="description longText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ab rem, eos
-          tempore tenetur, nisi voluptates libero praesentium perferendis labore omnis est dolor cupiditate culpa
-          maiores
-          reiciendis ad veritatis? Maiores totam incidunt neque corrupti cum nulla quas? Animi illo aut, nemo iusto
-          harum,
-          ut inventore ullam eum, provident veniam placeat.</p>
-        <div class="popupPricing">
-          <p class="s1 serviceName">Mycie detailingowe + dekontaminacja</p>
-          <span class="span1"></span>
-          <p class="price1">100 - 200zł</p>
-          <p class="s2 serviceName">Polerowanie lamp + impregnacja</p>
-          <span class="span2"></span>
-          <p class="price2">80zł/szt</p>
-          <p class="s3 serviceName">Mycie, pielęgnacja silnika</p>
-          <span class="span3"></span>
-          <p class="price3">od 150zł</p>
-          <p class="s4 serviceName">Mycie podwozia</p>
-          <span class="span4"></span>
-          <p class="price4">100 zł</p>
-          <p class="s5 serviceName">Czyszczenie oraz zabezpieczenie dachu kabrio</p>
-          <span class="span5"></span>
-          <p class="price5">Wycena indywidualna</p>
-        </div>
-        <button class="closeServicePopupStyle closeServicePopup"><i
-            class="fa-solid fa-x closeServicePopup"></i></button>
+  <section id="kontakt" class="contact">
+    <h1 class="sectionTitle">Kontakt</h1>
+    <h2>Jeśli masz pytania lub potrzebujesz indywidualnej wyceny zadzwoń do nas lub skorzystaj z formularza kontaktowego</h2>
+    <div class="container">
+      <div class="address">
+        <h2>BIPI Detailing</h2>
+        <p>Dojazdów ul. Rubinowa 1</p>
+        <p>000 - 000 - 000</p>
+        <p>email@gmail.com</p>
       </div>
-    </section>
+      <div class="contactForm">
+        <form action="https://formsubmit.co/your@email.com" method="POST">
+          <input type="hidden" name="_subject" value="Nowe zapytanie o ofertę!">
+          <input type="text" name="name" placeholder="Imię" required>
+          <input type="email" name="email" placeholder="Adres email" required>
+          <input type="hidden" name="_autoresponse" value="Dziękujemy za wiadomość!">
+          <textarea name="message" class="text" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2557.7328567883565!2d20.10305201568594!3d50.1287206794323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47164f0127753e03%3A0xbdc94a5fd6ed44b9!2sRubinowa%201%2C%2032-010%20Dojazd%C3%B3w!5e0!3m2!1spl!2spl!4v1659984017999!5m2!1spl!2spl" width="100%" height="400rem" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
 
-  </div>
+  <section class="footer">
+    
+  </section>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
@@ -382,8 +526,8 @@
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
   </script>
 
-  <script src="slider.js?v=3"></script>
-  <script src="popup.js?v=3"></script>
+  <script src="slider.js?v=4"></script>
+  <script src="popup.js?v=4"></script>
 </body>
 
 </html>

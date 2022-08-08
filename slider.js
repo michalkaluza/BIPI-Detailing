@@ -1,8 +1,5 @@
 // slider
 
-// dodaj .sctiveSlide do 1 slajdu
-// setTimeout 3s - usunięcie .activeSlide i dodanie do następnego slajdu w tablicy
-
 const next = document.querySelector("#next")
 const previous = document.querySelector("#previous")
 const slideIndicators = [...document.querySelectorAll('#showSlide1, #showSlide2, #showSlide3')]
