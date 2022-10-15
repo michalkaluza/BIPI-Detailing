@@ -1,7 +1,5 @@
-// slider
-
-const next = document.querySelector("#next")
-const previous = document.querySelector("#previous")
+const next = document.querySelector("#next>button")
+const previous = document.querySelector("#previous>button")
 const slideIndicators = [...document.querySelectorAll('#showSlide1, #showSlide2, #showSlide3')]
 const slides = [...document.querySelectorAll('#slide1, #slide2, #slide3')]
 
@@ -43,9 +41,10 @@ const decreaseIndex = () => {
 
 
 const showNextSlide = () => {
-clearInterval(indexIncreaser)
-increaseIndex()
-indexIncreaser = setInterval(increaseIndex, 3000)
+    console.log("dupa")
+clearInterval(indexIncreaser);
+increaseIndex();
+indexIncreaser = setInterval(increaseIndex, 3000);
 }
 
 const showPreviousSlide = () => {

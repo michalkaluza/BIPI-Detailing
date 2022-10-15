@@ -48,6 +48,7 @@ body {
     width: 100%;
     background-color: $main-blue;
     position: relative;
+    z-index: 2;
 }
 
 .navbar::before {
@@ -151,7 +152,7 @@ body {
     height: calc(100vh - #{$navbarHeight});
     position: relative;
     color: $main-bright-grey;
-    z-index: -1;
+    z-index: 1;
 }
 
 .slide {
@@ -754,6 +755,8 @@ $slideImgClipPath3: polygon(41% 4%, 100% 19%, 92% 87%, 3% 89%, 0 39%);
     h2 {
         max-width: 1320px;
         margin: 0 auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
         font-weight: normal;
         font-size: 1.7rem;
         margin-bottom: 4rem;
@@ -812,4 +815,15 @@ $slideImgClipPath3: polygon(41% 4%, 100% 19%, 92% 87%, 3% 89%, 0 39%);
         }
     }
 
+    .map {
+        
+    }
+
 }
+
+.footer {
+    height: 2vh;
+    color: $main-blue;
+    text-align: center;
+    font-size: 0.7rem;
+  }

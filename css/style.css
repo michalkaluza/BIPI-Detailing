@@ -39,6 +39,7 @@ body {
   width: 100%;
   background-color: #008dd2;
   position: relative;
+  z-index: 2;
 }
 
 .navbar::before {
@@ -143,7 +144,7 @@ body {
   height: calc(100vh - 20vh);
   position: relative;
   color: #e6e6e6;
-  z-index: -1;
+  z-index: 1;
 }
 
 .slide {
@@ -716,6 +717,8 @@ body {
 .contact h2 {
   max-width: 1320px;
   margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
   font-weight: normal;
   font-size: 1.7rem;
   margin-bottom: 4rem;
@@ -787,5 +790,12 @@ body {
 .contact .container .contactForm form textarea.text {
   height: 10rem;
   margin-bottom: 1rem;
+}
+
+.footer {
+  height: 2vh;
+  color: #008dd2;
+  text-align: center;
+  font-size: 0.7rem;
 }
 /*# sourceMappingURL=style.css.map */
