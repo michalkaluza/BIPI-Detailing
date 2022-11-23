@@ -215,18 +215,18 @@ body {
 }
 
 #slide1Img {
-  -webkit-clip-path: polygon(50% 0%, 100% 31%, 98% 90%, 19% 94%, 0% 21%);
-          clip-path: polygon(50% 0%, 100% 31%, 98% 90%, 19% 94%, 0% 21%);
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
 }
 
 #slide2Img {
-  -webkit-clip-path: polygon(36% 0%, 100% 24%, 96% 85%, 4% 95%, 0 18%);
-          clip-path: polygon(36% 0%, 100% 24%, 96% 85%, 4% 95%, 0 18%);
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
 }
 
 #slide3Img {
-  -webkit-clip-path: polygon(41% 4%, 100% 19%, 92% 87%, 3% 89%, 0 39%);
-          clip-path: polygon(41% 4%, 100% 19%, 92% 87%, 3% 89%, 0 39%);
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
 }
 
 #slide1Img > div {
@@ -236,8 +236,8 @@ body {
   top: 5px;
   left: 5px;
   background-color: white;
-  -webkit-clip-path: polygon(50% 0%, 100% 31%, 98% 90%, 19% 94%, 0% 21%);
-          clip-path: polygon(50% 0%, 100% 31%, 98% 90%, 19% 94%, 0% 21%);
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
 }
 
 #slide2Img > div {
@@ -247,8 +247,8 @@ body {
   top: 5px;
   left: 5px;
   background-color: white;
-  -webkit-clip-path: polygon(36% 0%, 100% 24%, 96% 85%, 4% 95%, 0 18%);
-          clip-path: polygon(36% 0%, 100% 24%, 96% 85%, 4% 95%, 0 18%);
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
 }
 
 #slide3Img > div {
@@ -258,8 +258,8 @@ body {
   top: 5px;
   left: 5px;
   background-color: white;
-  -webkit-clip-path: polygon(41% 4%, 100% 19%, 92% 87%, 3% 89%, 0 39%);
-          clip-path: polygon(41% 4%, 100% 19%, 92% 87%, 3% 89%, 0 39%);
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
 }
 
 #slide1Img > div > div {
@@ -269,8 +269,8 @@ body {
   top: 5px;
   left: 5px;
   background-image: url("../img/carousel1.jpg");
-  -webkit-clip-path: polygon(50% 0%, 100% 31%, 98% 90%, 19% 94%, 0% 21%);
-          clip-path: polygon(50% 0%, 100% 31%, 98% 90%, 19% 94%, 0% 21%);
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
 }
 
 #slide2Img > div > div {
@@ -281,8 +281,8 @@ body {
   left: 5px;
   background-image: url("../img/carousel2.jpg");
   background-position: 0 10%;
-  -webkit-clip-path: polygon(36% 0%, 100% 24%, 96% 85%, 4% 95%, 0 18%);
-          clip-path: polygon(36% 0%, 100% 24%, 96% 85%, 4% 95%, 0 18%);
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
 }
 
 #slide3Img > div > div {
@@ -292,8 +292,8 @@ body {
   top: 5px;
   left: 5px;
   background-image: url("../img/carousel3.jpg");
-  -webkit-clip-path: polygon(41% 4%, 100% 19%, 92% 87%, 3% 89%, 0 39%);
-          clip-path: polygon(41% 4%, 100% 19%, 92% 87%, 3% 89%, 0 39%);
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
 }
 
 .sliderButton {
@@ -368,7 +368,7 @@ body {
 .oNasWrap {
   position: absolute;
   top: 25%;
-  left: 15%;
+  left: 5%;
   right: 60%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -402,7 +402,7 @@ body {
   }
   .oNasWrap {
     position: static;
-    padding: 4rem 2rem;
+    padding: 2rem 2rem;
   }
 }
 
@@ -641,12 +641,12 @@ body {
   font-weight: bold;
 }
 
-#popupService5 .servicesPopup {
+#popupService5 .servicesPopup, #popupService6 .servicesPopup {
   max-width: 90%;
   min-width: 80%;
 }
 
-#popupService5 .popupPricing {
+#popupService5 .popupPricing, #popupService6 .popupPricing {
   margin-bottom: 2rem;
 }
 

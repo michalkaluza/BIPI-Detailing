@@ -215,9 +215,12 @@ body {
 }
 
 $slideImgHeight: 90%;
-$slideImgClipPath1: polygon(50% 0%, 100% 31%, 98% 90%, 19% 94%, 0% 21%);
-$slideImgClipPath2: polygon(36% 0%, 100% 24%, 96% 85%, 4% 95%, 0 18%);
-$slideImgClipPath3: polygon(41% 4%, 100% 19%, 92% 87%, 3% 89%, 0 39%);
+$slideImgClipPath1: circle(50% at 50% 50%);
+// polygon(50% 0%, 100% 31%, 98% 90%, 19% 94%, 0% 21%);
+$slideImgClipPath2: circle(50% at 50% 50%);
+// polygon(36% 0%, 100% 24%, 96% 85%, 4% 95%, 0 18%);
+$slideImgClipPath3: circle(50% at 50% 50%);
+// polygon(41% 4%, 100% 19%, 92% 87%, 3% 89%, 0 39%);
 
 
 .slideImg {
@@ -380,7 +383,7 @@ $slideImgClipPath3: polygon(41% 4%, 100% 19%, 92% 87%, 3% 89%, 0 39%);
 .oNasWrap {
     position: absolute;
     top: 25%;
-    left: 15%;
+    left: 5%;
     right: 60%;
 
     flex-direction: column;
@@ -414,7 +417,7 @@ $slideImgClipPath3: polygon(41% 4%, 100% 19%, 92% 87%, 3% 89%, 0 39%);
 
     .oNasWrap {
         position: static;
-        padding: 4rem 2rem;
+        padding: 2rem 2rem;
     }
 }
 
@@ -666,7 +669,7 @@ $slideImgClipPath3: polygon(41% 4%, 100% 19%, 92% 87%, 3% 89%, 0 39%);
 }
 
 
-#popupService5 {
+#popupService5, #popupService6 {
 
     .servicesPopup {
         max-width: 90%;
